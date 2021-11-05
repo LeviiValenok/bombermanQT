@@ -10,15 +10,20 @@
 #include <QObject>
 
 
-class Bomb
+class Bomb: public QObject, public QGraphicsRectItem
 {
-
+    Q_OBJECT
 private:
     int **bombCoordinate;
     int iBomb;
     int jBomb;
 public:
     friend class Player;
+
+    Bomb(qreal x, qreal y);
+//public slots:
+//    void detonation();
+
 //    friend class Map;
 //    friend class Enemies;
 //    Bomb();

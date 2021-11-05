@@ -4,17 +4,22 @@
 #include <QGraphicsPixmapItem>
 #include <QObject>
 #include <QGraphicsItem>
+#include <QList>
 
 
 #include "Map.h"
+#include "DestroyedBlock.h"
+
+#include <stdbool.h>
 
 class Player : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 private:
         int **playerCoordinate;
-        int iPlayer;
-        int jPlayer;
+        qreal xPos = x();
+        qreal yPos = y();
+
 public:
     Player(QGraphicsItem * parent= 0);
     int health = 3;
@@ -34,6 +39,11 @@ public:
 //    bool youCanMoveLeft(Map map);
 
     void keyPressEvent(QKeyEvent * event);
+
+
+    bool collidings();
+    void action(qreal xPrevious, qreal yPrevious);
+
 };
 
 #endif // PLAYER_H

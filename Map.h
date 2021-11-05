@@ -2,6 +2,11 @@
 #define MAP_H
 
 
+#include <QGraphicsScene>
+#include <QGraphicsPathItem>
+#include <QGraphicsObject>
+#include <QGraphicsItem>
+
 enum cellType
 {
     EemptyPath = 0,
@@ -15,8 +20,10 @@ enum cellType
 
 //add value exit
 
-class Map
+class Map : public QObject, public QGraphicsPixmapItem
 {
+    Q_OBJECT
+
     private:
         cellType type;
         int table[8][9] =
@@ -33,10 +40,13 @@ class Map
 //        int iMap;
 //        int jMap;
         public:
+
         friend class Player;
         friend class Bomb;
         friend class Enemies;
-        Map();
+
+        Map(QGraphicsItem* parent = 0);
+
 
         void setCellValue(int i, int j, int value);
         void outputCTable();

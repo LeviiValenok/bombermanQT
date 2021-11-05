@@ -1,5 +1,6 @@
 #include "Bomberman.h"
 
+
 #include <QTimer>
 #include <QGraphicsTextItem>
 #include <QFont>
@@ -17,13 +18,21 @@ Bomberman::Bomberman(QWidget* parent)
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setFixedSize(800,600);
 
+    map = new Map();
+
     player = new Player();
-   // change the rect from 0x0 (default) to 100x100 pixels
+
+//    DestroyedBlock* destroyedBlock = new DestroyedBlock();
+
     player->setPos(400,500);
     player->setFlag(QGraphicsItem::ItemIsFocusable);
     player->setFocus();
     // add the player to the scene
+    scene ->addItem(map);
     scene->addItem(player);
+
+    scene->addItem(new DestroyedBlock(150, 0));
+    scene->addItem(new DestroyedBlock(75, 75));
 
     show();
 }

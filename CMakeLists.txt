@@ -20,8 +20,8 @@ set(PROJECT_SOURCES
         widget.h
         Player.cpp
         Player.h
-#        Map.cpp
-#        Map.h
+        Map.cpp
+        Map.h
 #        Enemies.cpp
 #        Enemies.h
         Bomb.cpp
@@ -29,6 +29,8 @@ set(PROJECT_SOURCES
         resourses.qrc
         Bomberman.cpp
         Bomberman.h
+        DestroyedBlock.cpp
+        DestroyedBlock.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

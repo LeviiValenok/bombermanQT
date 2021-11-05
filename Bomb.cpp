@@ -4,6 +4,17 @@
 
 #include "Bomb.h"
 #include "Player.h"
+
+
+#include <QTimer>
+#include <QGraphicsScene>
+#include <QList>
+
+Bomb::Bomb(qreal x, qreal y): QObject(), QGraphicsRectItem()
+{
+    setRect(x+15, y+30, 50, 50);
+}
+
 //#include "Map.h"
 //#include "Enemies.h"
 
@@ -141,3 +152,4 @@ void Bomb :: destroyBlocks(Map& map)
     }
 }
 */
+

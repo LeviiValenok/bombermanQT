@@ -1,7 +1,12 @@
 #include "Player.h"
 #include "Map.h"
+#include "Bomb.h"
+
 #include <stdio.h>
 #include <conio.h>
+#include <stdbool.h>
+
+#include <QList>
 #include <QGraphicsScene>
 #include <QKeyEvent>
 #include <QGraphicsPixmapItem>
@@ -11,22 +16,91 @@ Player:: Player(QGraphicsItem *parent): QGraphicsPixmapItem(parent)
     setPixmap(QPixmap(":/pictures/bombermanPic/player.png"));
 }
 
+bool Player :: collidings()
+{
+
+    bool youCanMove = true;
+    QList<QGraphicsItem *> collidingBlock = collidingItems();
+    for (int i = 0, n = collidingBlock.size(); i < n; i++)
+    {
+       if (typeid(*(collidingBlock[i])) == typeid(DestroyedBlock))
+       {
+         youCanMove = false;
+       }
+
+    }
+    return youCanMove;
+}
+
+
+void Player :: action(qreal xPrevious, qreal yPrevious)
+{
+     if (collidings() == false)
+     {
+         setPos(xPrevious, yPrevious);
+     }
+}
+
 void Player :: keyPressEvent(QKeyEvent *event)
 {
-    if (event->key() == Qt::Key_A){
-        setPos(x()-10,y());
+
+    if (event->key() == Qt::Key_A)
+    {
+        if(pos().x()>0 && collidings())
+         {
+             setPos(x()-5,y());
+         }
+        else
+        {
+            action(x()+5, y());
+        }
+
+
+//        else
+//        {
+//            setPos(xPrevious, yPrevious);
+//        }
     }
-    else if (event->key() == Qt::Key_D){
-        setPos(x()+10,y());
+    else if (event->key() == Qt::Key_D)
+        {
+        if(pos().x() + 75 < 800 && collidings())
+        {
+            setPos(x()+5,y());
+        }
+        else
+        {
+            action(x()-5, y());
+        }
+//        else
+//        {
+//            setPos(xPrevious, yPrevious);
+//        }
     }
-    else if (event->key() == Qt::Key_W){
-        setPos(x(),y()-10);
+    else if (event->key() == Qt::Key_W)
+    {
+        if(pos().y() > 0 && collidings())
+        {
+            setPos(x(),y()-5);
+        }
+        else
+        {
+            action(x(), y()+5);
+        }
     }
-    else if (event->key() == Qt::Key_S){
-        setPos(x(),y()+10);
+    else if (event->key() == Qt::Key_S)
+    {
+        if(pos().y() + 100 < 600 && collidings())
+        {
+            setPos(x(),y()+5);
+        }
+        else
+        {
+            action(x(), y()-5);
+        }
     }else if(event->key() == Qt::Key_Space)
     {
-
+        Bomb *bomb = new Bomb(x(), y());
+        scene()->addItem(bomb);
     }
 }
 
