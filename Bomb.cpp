@@ -9,11 +9,55 @@
 #include <QTimer>
 #include <QGraphicsScene>
 #include <QList>
+#include <QGraphicsItem>
 
-Bomb::Bomb(qreal x, qreal y): QObject(), QGraphicsRectItem()
+
+void Bomb::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    setRect(x+15, y+30, 50, 50);
+    QPolygon polygon;
+    polygon << QPoint(300,200) << QPoint(225,300) << QPoint(300,300)
+            << QPoint(300, 400) << QPoint(375, 400) << QPoint(375, 300) << QPoint(450, 300)
+            <<  QPoint(450, 200) << QPoint(375, 200) << QPoint(375, 100) << QPoint(300, 100);
+    painter->setBrush(Qt::black);
+    painter->drawPolygon(polygon);
+    Q_UNUSED(option);
+    Q_UNUSED(widget);
 }
+
+
+//Bomb::Bomb(qreal x, qreal y): QObject(), QGraphicsRectItem()
+//{
+////    setRect(x, y, 50, 50);
+
+//}
+
+
+Bomb::Bomb() : QObject(), QGraphicsPixmapItem()
+{
+
+}
+
+
+//void Bomb::bombDetonation()
+//{
+//    QList<QGraphicsItem*> collisionWithItems = collidingItems();
+//    for (int i = 0, n = collisionWithItems.size(); i < n; i++)
+//    {
+//       if (typeid(*(collisionWithItems[i])) == typeid(DestroyedBlock))
+//       {
+//           scene()->removeItem(collisionWithItems[i]);
+//                      scene()->removeItem(this);
+//                      // delete them both
+//                      delete collisionWithItems[i];
+//                      delete this;
+//                      return;
+//       }
+
+//    }
+//}
+
+
+
 
 //#include "Map.h"
 //#include "Enemies.h"

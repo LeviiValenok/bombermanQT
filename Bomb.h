@@ -8,9 +8,10 @@
 
 #include <QGraphicsRectItem>
 #include <QObject>
+#include <QPainter>
+#include <QGraphicsItem>
 
-
-class Bomb: public QObject, public QGraphicsRectItem
+class Bomb: public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 private:
@@ -19,8 +20,16 @@ private:
     int jBomb;
 public:
     friend class Player;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+    Bomb();
+//    Bomb(qreal x, qreal y);
 
-    Bomb(qreal x, qreal y);
+
+
+
+//    void bombDetonation();
+
+
 //public slots:
 //    void detonation();
 

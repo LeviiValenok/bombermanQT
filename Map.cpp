@@ -1,12 +1,16 @@
 
-
+#include "DestroyedBlock.h"
 #include "Map.h"
 #include <iostream>
+
+#include <QGraphicsScene>
 
 Map :: Map(QGraphicsItem* parent):QGraphicsPixmapItem(parent)
 {
     setPixmap(QPixmap(":/pictures/bombermanPic/ground.png"));
 }
+
+
 
 void Map :: setCellValue(int i, int j, int value)
 {

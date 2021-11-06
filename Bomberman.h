@@ -19,7 +19,6 @@ public:
     QGraphicsScene * scene;
     Map* map;
     Player* player;
-
 };
 
 #endif // BOMBERMAN_H

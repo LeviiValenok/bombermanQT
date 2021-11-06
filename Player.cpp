@@ -52,7 +52,8 @@ void Player :: keyPressEvent(QKeyEvent *event)
          }
         else
         {
-            action(x()+5, y());
+            action(x()+10, y());
+            return;
         }
 
 
@@ -69,7 +70,8 @@ void Player :: keyPressEvent(QKeyEvent *event)
         }
         else
         {
-            action(x()-5, y());
+            action(x()-10, y());
+            return;
         }
 //        else
 //        {
@@ -84,7 +86,9 @@ void Player :: keyPressEvent(QKeyEvent *event)
         }
         else
         {
-            action(x(), y()+5);
+            action(x(), y()+10);
+            return;
+
         }
     }
     else if (event->key() == Qt::Key_S)
@@ -95,11 +99,12 @@ void Player :: keyPressEvent(QKeyEvent *event)
         }
         else
         {
-            action(x(), y()-5);
+            action(x(), y()-10);
+            return;
         }
     }else if(event->key() == Qt::Key_Space)
     {
-        Bomb *bomb = new Bomb(x(), y());
+        Bomb* bomb = new Bomb();
         scene()->addItem(bomb);
     }
 }
