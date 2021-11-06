@@ -7,6 +7,8 @@
 #include <QGraphicsObject>
 #include <QGraphicsItem>
 
+#include "DestroyedBlock.h"
+
 enum cellType
 {
     EemptyPath = 0,
@@ -26,16 +28,14 @@ class Map : public QObject, public QGraphicsPixmapItem
 
     private:
         cellType type;
-        int table[8][9] =
+        int table[6][8] =
             {
-                {2, 2, 2, 2, 2, 2, 2, 2, 2},
-                {2, 0, 0, 0, 0, 1, 1, 0, 2},
-                {2, 0, 2, 0, 2, 0, 2, 0, 2},
-                {2, 0, 0, 1, 0, 0, 0, 0, 2},
-                {2, 0, 2, 0, 2, 0, 2, 0, 2},
-                {2, 0, 0, 0, 0, 1, 1, 0, 2},
-                {2, 0, 1, 1, 0, 0, 0, 0, 2},
-                {2, 2, 2, 2, 2, 2, 2, 2, 2}
+                { 0, 0, 0, 0, 1, 1, 0, 1},
+                { 0, 2, 0, 2, 0, 2, 0, 1},
+                { 0, 0, 1, 0, 0, 0, 0, 0},
+                { 0, 2, 0, 2, 0, 2, 0, 2},
+                { 0, 0, 0, 0, 1, 1, 0, 2},
+                { 0, 1, 1, 0, 0, 0, 0, 2},
             };
 //        int iMap;
 //        int jMap;
@@ -45,11 +45,12 @@ class Map : public QObject, public QGraphicsPixmapItem
         friend class Bomb;
         friend class Enemies;
 
-        Map(QGraphicsItem* parent = 0);
+        Map(QGraphicsScene* scene, QGraphicsItem* parent = 0);
+        void outputField(QGraphicsScene* scene);
 
 
         void setCellValue(int i, int j, int value);
-        void outputCTable();
+//        void outputCTable();
 
 
 };

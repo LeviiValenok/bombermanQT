@@ -11,6 +11,7 @@
 #include "Map.h"
 #include "DestroyedBlock.h"
 #include "Player.h"
+//#include "Background.h"
 
 class Bomberman : public QGraphicsView
 {
@@ -19,6 +20,7 @@ public:
     QGraphicsScene * scene;
     Map* map;
     Player* player;
+//    Background* background;
 };
 
 #endif // BOMBERMAN_H

@@ -31,6 +31,7 @@ set(PROJECT_SOURCES
         Bomberman.h
         DestroyedBlock.cpp
         DestroyedBlock.h
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

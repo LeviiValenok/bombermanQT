@@ -27,7 +27,7 @@ void Bomb::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
 
 //Bomb::Bomb(qreal x, qreal y): QObject(), QGraphicsRectItem()
 //{
-////    setRect(x, y, 50, 50);
+//    setRect(x, y, 50, 50);
 
 //}
 
