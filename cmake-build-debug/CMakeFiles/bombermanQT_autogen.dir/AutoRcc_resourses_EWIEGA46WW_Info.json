@@ -1,0 +1,26 @@
+{
+	"BUILD_DIR" : "C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen",
+	"CMAKE_BINARY_DIR" : "C:/University/CourseWork/bombermanQT/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/University/CourseWork/bombermanQT/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/University/CourseWork/bombermanQT",
+	"CMAKE_SOURCE_DIR" : "C:/University/CourseWork/bombermanQT",
+	"INCLUDE_DIR" : "C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/University/CourseWork/bombermanQT/bombermanPic/player.png",
+		"C:/University/CourseWork/bombermanQT/bombermanPic/broken.png",
+		"C:/University/CourseWork/bombermanQT/bombermanPic/groundWithLines.png",
+		"C:/University/CourseWork/bombermanQT/bombermanPic/ground.png",
+		"C:/University/CourseWork/bombermanQT/bombermanPic/doesntBroke.png"
+	],
+	"LOCK_FILE" : "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT_autogen.dir/AutoRcc_resourses_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resourses" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resourses.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.2.0/mingw81_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT_autogen.dir/AutoRcc_resourses_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/University/CourseWork/bombermanQT/resourses.qrc",
+	"VERBOSITY" : 0
+}

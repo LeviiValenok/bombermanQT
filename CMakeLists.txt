@@ -31,6 +31,8 @@ set(PROJECT_SOURCES
         Bomberman.h
         DestroyedBlock.cpp
         DestroyedBlock.h
+        Indestructible.cpp
+        Indestructible.h
 
 )
 

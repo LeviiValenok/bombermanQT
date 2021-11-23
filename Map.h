@@ -28,17 +28,28 @@ class Map : public QObject, public QGraphicsPixmapItem
 
     private:
         cellType type;
+//        int table[6][8] =
+//            {
+//                { 0, 0, 0, 0, 1, 1, 0, 1},
+//                { 0, 2, 0, 2, 0, 2, 0, 1},
+//                { 0, 0, 1, 0, 0, 0, 0, 0},
+//                { 0, 2, 0, 2, 0, 2, 0, 2},
+//                { 0, 0, 0, 0, 1, 1, 0, 2},
+//                { 0, 1, 1, 0, 0, 0, 0, 2},
+//            };
+
+        //for debug
         int table[6][8] =
             {
-                { 0, 0, 0, 0, 1, 1, 0, 1},
+                { 0, 0, 0, 0, 0, 0, 0, 1},
                 { 0, 2, 0, 2, 0, 2, 0, 1},
                 { 0, 0, 1, 0, 0, 0, 0, 0},
                 { 0, 2, 0, 2, 0, 2, 0, 2},
                 { 0, 0, 0, 0, 1, 1, 0, 2},
                 { 0, 1, 1, 0, 0, 0, 0, 2},
             };
-//        int iMap;
-//        int jMap;
+        int iMap;
+        int jMap;
         public:
 
         friend class Player;
@@ -47,7 +58,7 @@ class Map : public QObject, public QGraphicsPixmapItem
 
         Map(QGraphicsScene* scene, QGraphicsItem* parent = 0);
         void outputField(QGraphicsScene* scene);
-
+        Map();
 
         void setCellValue(int i, int j, int value);
 //        void outputCTable();

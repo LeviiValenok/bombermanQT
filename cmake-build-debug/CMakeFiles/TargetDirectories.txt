@@ -1,0 +1,4 @@
+C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir
+C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT_autogen.dir

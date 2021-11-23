@@ -9,19 +9,21 @@
 
 #include "Map.h"
 #include "DestroyedBlock.h"
+#include "Indestructible.h"
 
 #include <stdbool.h>
 
-class Player : public QObject, public QGraphicsPixmapItem
+class Player : public QObject, public QGraphicsRectItem
 {
     Q_OBJECT
 private:
         int **playerCoordinate;
-        qreal xPos = x();
-        qreal yPos = y();
+        int iPlayer;
+        int jPlayer;
 
 public:
-    Player(QGraphicsItem * parent= 0);
+//    Player(QGraphicsItem * parent= 0);
+    Player(QGraphicsItem * parent=0);
     int health = 3;
     int score = 0;
 
@@ -30,19 +32,19 @@ public:
 //    int getJPosition();
 //    friend class Bomb;
 //    friend class Enemies;
-//    friend class Map;
+
 
 //    void  movement(Player& player, Map& map, bool& isQuite);
 //    bool youCanMoveUp(Map map);
 //    bool youCanMoveDown(Map map);
 //    bool youCanMoveRight(Map map);
 //    bool youCanMoveLeft(Map map);
-
+//, Map &map
     void keyPressEvent(QKeyEvent * event);
-
-
     bool collidings();
     void action(qreal xPrevious, qreal yPrevious);
+
+    friend class Map;
 
 };
 

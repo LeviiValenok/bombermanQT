@@ -1,0 +1,5 @@
+C:/University/CourseWork/bombermanQT/cmake-build-debug/config.tests/static_link_order/CMakeFiles/objLib.dir
+C:/University/CourseWork/bombermanQT/cmake-build-debug/config.tests/static_link_order/CMakeFiles/staticLib.dir
+C:/University/CourseWork/bombermanQT/cmake-build-debug/config.tests/static_link_order/CMakeFiles/edit_cache.dir
+C:/University/CourseWork/bombermanQT/cmake-build-debug/config.tests/static_link_order/CMakeFiles/static_link_order_test.dir
+C:/University/CourseWork/bombermanQT/cmake-build-debug/config.tests/static_link_order/CMakeFiles/rebuild_cache.dir

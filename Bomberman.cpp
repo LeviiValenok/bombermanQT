@@ -6,6 +6,7 @@
 #include <QFont>
 #include <QBrush>
 #include <QImage>
+#include <QGraphicsRectItem>
 
 Bomberman::Bomberman(QWidget* parent)
 {
@@ -21,14 +22,14 @@ Bomberman::Bomberman(QWidget* parent)
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setFixedSize(800,600);
 
-    setBackgroundBrush(QBrush(QImage(":/pictures/bombermanPic/ground.png")));
+    setBackgroundBrush(QBrush(QImage(":/pictures/bombermanPic/groundWithLines.png")));
 
     map = new Map(scene);
     player = new Player();
 //    background = new Background();
 
 
-    player->setPos(300,500);
+    player->setRect(0, 0, 75, 75);
     player->setFlag(QGraphicsItem::ItemIsFocusable);
     player->setFocus();
 

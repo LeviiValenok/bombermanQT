@@ -1,15 +1,23 @@
 
 #include "DestroyedBlock.h"
+#include "Indestructible.h"
 #include "Map.h"
 #include <iostream>
 
 #include <QGraphicsScene>
+#include <QDebug>
 
 Map :: Map(QGraphicsScene* scene, QGraphicsItem* parent):QGraphicsPixmapItem(parent)
 {
 
     outputField(scene);
 //    setPixmap(QPixmap(":/pictures/bombermanPic/ground.png"));
+
+}
+
+
+Map :: Map()
+{
 
 }
 
@@ -22,9 +30,19 @@ void Map::outputField(QGraphicsScene *scene)
                 {
                    if(table[i][j] == 1)
                     {
-                       DestroyedBlock* block = new DestroyedBlock(i*100, j*100);
-                       scene->addItem(block);
+//                       qDebug() << "table [i][j] " << table[i][j];
+//                       qDebug() << "i "<<i;
+//                       qDebug() << "j "<<j;
+                       DestroyedBlock* destroyedBlock = new DestroyedBlock(i*100, j*100);
+                       destroyedBlock->setRect(i*100, j*100, 100, 100);
+                       scene->addItem(destroyedBlock);
                     }
+                   if(table[i][j] == 2)
+                   {
+                       Indestructible* indestrictableBlock = new Indestructible(i*100, j*100);
+                       indestrictableBlock->setRect(i*100, j*100, 100, 100);
+                       scene->addItem(indestrictableBlock);
+                   }
                 }
             }
 }
