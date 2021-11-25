@@ -116,9 +116,11 @@ void Player :: action(qreal xPrevious, qreal yPrevious)
 
 void Player :: keyPressEvent(QKeyEvent *event)
 {
-    iPlayer = x();
-    jPlayer = y();
-
+    xPlayer = x();
+    yPlayer = y();
+    int blockSize = 100;
+    int playerSize = 75;
+    int step = 10;
 
     Map* map = new Map();
 
@@ -126,131 +128,50 @@ void Player :: keyPressEvent(QKeyEvent *event)
     if (event->key() == Qt::Key_A)
     {
 
-//        if(iPlayer>0 && (map->table[(iPlayer-10)/100][(jPlayer+75)/100] == EemptyPath))
-        if(iPlayer>0 && (map->table[(jPlayer+75)/100][(iPlayer-10)/100] == EemptyPath))
+//        qDebug() << "x player >> " << xPlayer << " y player >> " << yPlayer;
+//        qDebug() << "iMap >> " << yPlayer/blockSize << "jMap >> " << (xPlayer-step)/blockSize
+//                 << map->table[(yPlayer)/blockSize][(xPlayer-step)/blockSize];
+//        qDebug() << "iMap >> " << (yPlayer+playerSize)/blockSize << "jMap >> " << (xPlayer-step)/blockSize
+//                 << map->table[(yPlayer+playerSize)/blockSize][(xPlayer-step)/blockSize];
+
+        if(xPlayer - step >= 0 &&
+        (map->table[(yPlayer+playerSize)/blockSize][(xPlayer-step)/blockSize] == EemptyPath)
+        && (map->table[(yPlayer)/blockSize][(xPlayer-step)/blockSize] == EemptyPath))
          {
 
-             qDebug()<< "iMap " << (iPlayer-10)/100 << "jMap " << (jPlayer+75)/100;
-             qDebug()<< "map value " << map->table[(iPlayer-10)/100][(jPlayer+75)/100];
-             qDebug()<< "iPlayer " <<iPlayer;
-             qDebug()<< "jPlayer " << jPlayer;
-
-//            setPos(iPlayer-7,jPlayer);
-             setPos(jPlayer, iPlayer-7);
-
+            setPos(xPlayer-step,yPlayer);
          }
-//            if(jPlayer>0 &&
-//                    (map->table[(iPlayer+75)/100][(jPlayer-10)/100] == EemptyPath))
-//             {
 
-//                 qDebug()<< "iMap " << (iPlayer+75)/100 << "jMap " << (jPlayer-10)/100;
-//                 qDebug()<< "map value " << map->table[(iPlayer+75)/100][(jPlayer-10)/100];
-//                 qDebug()<< "iPlayer " <<iPlayer;
-//                 qDebug()<< "jPlayer " << jPlayer;
-
-//                setPos(iPlayer,jPlayer-7);
-//             }
-        else
-        {
-            action(iPlayer+13, jPlayer);
-
-            return;
-        }
 
     }
     else if (event->key() == Qt::Key_D)
         {
-//        if(iPlayer + 75 < 800 && map->table[(iPlayer+10+75)/100][(jPlayer+75)/100] == EemptyPath)
 
-        if(iPlayer + 75 < 800 && map->table[(jPlayer+75)/100][(iPlayer+10+75)/100] == EemptyPath)
-
-
+        if(xPlayer + playerSize + step <= 800 &&
+            (map->table[(yPlayer+playerSize)/blockSize][(xPlayer+step+playerSize)/blockSize] == EemptyPath)
+            && (map->table[(yPlayer)/blockSize][(xPlayer+step+playerSize)/blockSize] == EemptyPath))
         {
-            qDebug()<<"iMap " << (iPlayer+10+75)/100 << "jMap " << (jPlayer+75)/100;
-            qDebug()<< "map value " << map->table[(iPlayer+10+75)/100][(jPlayer+75)/100];
-            qDebug()<< "iPlayer " <<iPlayer;
-            qDebug()<< "jPlayer " << jPlayer;
 
-//            setPos(iPlayer+7,jPlayer);
-            setPos(jPlayer, iPlayer+7);
-        }
-//        if(jPlayer + 75 < 800 &&
-//        map->table[(iPlayer+75)/100][(jPlayer+75+10)/100] == EemptyPath)
-
-
-//        {
-//            qDebug()<<"iMap " << (iPlayer+75)/100 << "jMap " << (jPlayer+75+10)/100;
-//            qDebug()<< "map value " << map->table[(iPlayer+75)/100][(jPlayer+75+10)/100];
-//            qDebug()<< "iPlayer " <<iPlayer;
-//            qDebug()<< "jPlayer " << jPlayer;
-
-//            setPos(iPlayer,jPlayer + 7);
-//        }
-        else
-        {
-            action(iPlayer-13, jPlayer);
-            return;
+            setPos(xPlayer+step,yPlayer);
         }
     }
     else if (event->key() == Qt::Key_W)
     {
-//        if(jPlayer > 0 && (map->table[(iPlayer+75)/100][(jPlayer-10)/100] ==  EemptyPath))
-        if(jPlayer > 0 && (map->table[(jPlayer-10)/100][(iPlayer+75)/100] ==  EemptyPath))
-
+        if(yPlayer - step >= 0 &&
+                (map->table[(yPlayer-step)/blockSize][(xPlayer+playerSize)/blockSize] == EemptyPath)
+                && (map->table[(yPlayer-step)/blockSize][(xPlayer)/blockSize] == EemptyPath))
         {
-            qDebug()<<"iMap " << (iPlayer+75)/100 << "jMap " << (jPlayer-10)/100;
-            qDebug()<< "map value " << map->table[(iPlayer)/100][(jPlayer-10)/100];
-            qDebug()<< "iPlayer " <<iPlayer;
-            qDebug()<< "jPlayer " << jPlayer;
-
-//            setPos(iPlayer,jPlayer-7);
-
-            setPos(jPlayer-7, iPlayer);
-        }
-//        if(iPlayer > 0 && (map->table[(iPlayer-10)/100][(jPlayer+75)/100] ==  EemptyPath))
-
-//        {
-//            qDebug()<<"iMap " << (iPlayer-10)/100 << "jMap " << (jPlayer+75)/100;
-//            qDebug()<< "map value " << map->table[(iPlayer-10)/100][(jPlayer+75)/100];
-//            qDebug()<< "iPlayer " <<iPlayer;
-//            qDebug()<< "jPlayer " << jPlayer;
-
-//            setPos(iPlayer-7,jPlayer);
-//        }
-        else
-        {
-            action(iPlayer, jPlayer+13);
-            return;
-
+            setPos(xPlayer,yPlayer-step);
         }
     }
     else if (event->key() == Qt::Key_S)
     {
-//        if(jPlayer + 75 < 600 && (map->table[(iPlayer+75)/100][(jPlayer+10+75)/100] == EemptyPath))
-        if(jPlayer + 75 < 600 && (map->table[(jPlayer+10+75)/100][(iPlayer+75)/100] == EemptyPath))
-
+     if(yPlayer + playerSize + step <= 600 &&
+             (map->table[(yPlayer+step+playerSize)/blockSize][(xPlayer+playerSize)/blockSize] == EemptyPath)
+             && (map->table[(yPlayer+step+playerSize)/blockSize][(xPlayer)/blockSize] == EemptyPath))
         {
-            qDebug()<<"iMap " << (iPlayer+75)/100 << "jMap " << (jPlayer+10+75)/100;
-            qDebug()<< "map value " << map->table[(iPlayer+75)/100][(jPlayer+10+75)/100];
-            qDebug()<< "iPlayer " <<iPlayer;
-            qDebug()<< "jPlayer " << jPlayer;
 
-//            setPos(iPlayer,jPlayer+7);
-            setPos(jPlayer+7, iPlayer);
-        }
-//        if(iPlayer + 75 < 600 && (map->table[(iPlayer+75+10)/100][(jPlayer+75)/100] == EemptyPath))
-//        {
-//            qDebug()<<"iMap " << (iPlayer+75+10)/100 << "jMap " << (jPlayer+75)/100;
-//            qDebug()<< "map value " << map->table[(iPlayer+75+10)/100][(jPlayer+75)/100];
-//            qDebug()<< "iPlayer " <<iPlayer;
-//            qDebug()<< "jPlayer " << jPlayer;
-
-//            setPos(iPlayer+7,jPlayer);
-//        }
-        else
-        {
-            action(iPlayer, jPlayer-13);
-            return;
+            setPos(xPlayer,yPlayer+step);
         }
     }else if(event->key() == Qt::Key_Space)
     {

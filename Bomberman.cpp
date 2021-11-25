@@ -22,7 +22,7 @@ Bomberman::Bomberman(QWidget* parent)
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setFixedSize(800,600);
 
-    setBackgroundBrush(QBrush(QImage(":/pictures/bombermanPic/groundWithLines.png")));
+    setBackgroundBrush(QBrush(QImage(":/pictures/bombermanPic/ground.png")));
 
     map = new Map(scene);
     player = new Player();

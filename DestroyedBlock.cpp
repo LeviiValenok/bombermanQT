@@ -2,6 +2,8 @@
 
 #include <QGraphicsScene>
 #include <QGraphicsPixmapItem>
+#include <QPainter>
+#include <QPainterPath>
 
 //DestroyedBlock::DestroyedBlock(qreal x, qreal y, QGraphicsItem *parent): QGraphicsPixmapItem(parent)
 //{
@@ -10,7 +12,7 @@
 //}
 
 
-DestroyedBlock :: DestroyedBlock(qreal x, qreal y, QGraphicsItem *parent): QGraphicsRectItem(parent)
+DestroyedBlock :: DestroyedBlock(QGraphicsItem *parent): QGraphicsRectItem(parent)
 {
 
 }

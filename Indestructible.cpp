@@ -8,7 +8,7 @@
 //    setPos(x, y);
 //}
 
-Indestructible::Indestructible(qreal x, qreal y, QGraphicsItem *parent): QGraphicsRectItem(parent)
+Indestructible::Indestructible(QGraphicsItem *parent): QGraphicsRectItem(parent)
 {
 
 }

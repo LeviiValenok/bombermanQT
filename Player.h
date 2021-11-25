@@ -18,8 +18,8 @@ class Player : public QObject, public QGraphicsRectItem
     Q_OBJECT
 private:
         int **playerCoordinate;
-        int iPlayer;
-        int jPlayer;
+        int xPlayer;
+        int yPlayer;
 
 public:
 //    Player(QGraphicsItem * parent= 0);
