@@ -86,8 +86,8 @@ void *Bomb::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_Bomb.stringdata0))
         return static_cast<void*>(this);
-    if (!strcmp(_clname, "QGraphicsPixmapItem"))
-        return static_cast< QGraphicsPixmapItem*>(this);
+    if (!strcmp(_clname, "QGraphicsRectItem"))
+        return static_cast< QGraphicsRectItem*>(this);
     return QObject::qt_metacast(_clname);
 }
 

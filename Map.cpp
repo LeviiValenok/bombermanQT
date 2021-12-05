@@ -1,17 +1,18 @@
 
-#include "DestroyedBlock.h"
-#include "Indestructible.h"
+
+#include "IndestructibleBlock.h"
 #include "Map.h"
 #include <iostream>
+#include <stdlib.h>
 
 #include <QGraphicsScene>
 #include <QDebug>
+
 
 Map :: Map(QGraphicsScene* scene, QGraphicsItem* parent):QGraphicsPixmapItem(parent)
 {
 
     outputField(scene);
-//    setPixmap(QPixmap(":/pictures/bombermanPic/ground.png"));
 
 }
 
@@ -24,29 +25,27 @@ Map :: Map()
 void Map::outputField(QGraphicsScene *scene)
 {
 
-//        system("cls");
-//        QPainter painter(this);
         for (int i = 0; i < 6; i++)
             {
                 for (int j = 0; j < 8; j++)
                 {
-                   if(table[i][j] == EdestroyedBlock)
+                   if(initializationsTable[i][j] == DESTRUCTIBLE_BLOCK)
                     {
-//                       qDebug() << "table [i][j] " << table[i][j];
-//                       qDebug() << "i "<<i;
-//                       qDebug() << "j "<<j;
-                       DestroyedBlock* destroyedBlock = new DestroyedBlock();
+                       DestructibleBlock* destroyedBlock = new DestructibleBlock(j, i, DESTRUCTIBLE_BLOCK);
                        destroyedBlock->setRect(j*100, i*100, 100, 100);
                        scene->addItem(destroyedBlock);
-                       qDebug() << "Destroyed block is created i " << i << "j " << j;
+                       table[i][j] = destroyedBlock;
+                    } else
+                    {
+                       EmptyBlock* emptyBlock = new EmptyBlock(EMPTY);
+                       table[i][j] = emptyBlock;
                     }
-                   if(table[i][j] == Eindestructible)
-                   {
-                       Indestructible* indestrictableBlock = new Indestructible();
-                       indestrictableBlock->setRect(j*100, i*100, 100, 100);
-                       scene->addItem(indestrictableBlock);
-                       qDebug() << "Indestructable block is created i " << i << "j " << j;
-                   }
+//                   if(initializationsTable[i][j] == INDESTRUCTIBLE_BLOCK)
+//                   {
+//                       Map* indestrictableBlock = new IndestructibleBlock();
+//                       indestrictableBlock->setRect(j*100, i*100, 100, 100);
+//                       scene->addItem(indestrictableBlock);
+//                   }
                 }
             }
 }
@@ -56,7 +55,7 @@ void Map::outputField(QGraphicsScene *scene)
 
 //void Map :: setCellValue(int i, int j, int value)
 //{
-//    table[i][j] = value;
+//    initializationsTable[i][j] = value;
 //}
 
 
@@ -68,19 +67,19 @@ void Map::outputField(QGraphicsScene *scene)
 //        {
 //            for (int j = 0; j < 9; j++)
 //            {
-//                if (table[i][j] == Eindestructible)
+//                if (initializationsTable[i][j] == INDESTRUCTIBLE_BLOCK)
 //                {
 //                    std::cout << "#";
-//                }else if(table[i][j] == EdestroyedBlock)
+//                }else if(initializationsTable[i][j] == DESTRUCTIBLE_BLOCK)
 //                {
 //                    std::cout << "0";
-//                }else if(table[i][j] == EemptyPath)
+//                }else if(initializationsTable[i][j] == EMPTY)
 //                {
 //                    std::cout << ' ';
-//                }else if(table[i][j] == Eplayer)
+//                }else if(initializationsTable[i][j] == Eplayer)
 //                {
 //                    std::cout << '4';
-//                }else if(table[i][j] == Eenemies)
+//                }else if(initializationsTable[i][j] == Eenemies)
 //                {
 //                    std::cout << '5';
 //                }

@@ -8,8 +8,6 @@
 
 
 #include "Map.h"
-#include "DestroyedBlock.h"
-#include "Indestructible.h"
 
 #include <stdbool.h>
 
@@ -23,9 +21,10 @@ private:
 
 public:
 //    Player(QGraphicsItem * parent= 0);
-    Player(QGraphicsItem * parent=0);
+    Player( Map &map, QGraphicsItem * parent=0);
     int health = 3;
     int score = 0;
+    Map* map;
 
 //    Player(int i, int j, Map& map);
 //    int getIPosition();
@@ -41,9 +40,8 @@ public:
 //    bool youCanMoveLeft(Map map);
 //, Map &map
     void keyPressEvent(QKeyEvent * event);
-    bool collidings();
-    void action(qreal xPrevious, qreal yPrevious);
 
+    void setBomb(int xBomb, int yBomb, int bombSize);
     friend class Map;
 
 };

@@ -6,12 +6,14 @@
 #include <QObject>
 #include <QGraphicsItem>
 #include <QGraphicsRectItem>
+
+
 //public QGraphicsPixmapItem
-class Indestructible: public QObject, public QGraphicsRectItem
+class IndestructibleBlock: public QObject, public QGraphicsRectItem
 {
     Q_OBJECT
 public:
-    Indestructible(QGraphicsItem* parent = 0);
+    IndestructibleBlock(QGraphicsItem* parent = 0);
 };
 
 #endif // INDESTRUCTIBLE_H

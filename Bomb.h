@@ -6,12 +6,14 @@
 #include "Map.h"
 #include "Enemies.h"
 
+
 #include <QGraphicsRectItem>
 #include <QObject>
 #include <QPainter>
 #include <QGraphicsItem>
+#include <QGraphicsScene>
 
-class Bomb: public QObject, public QGraphicsPixmapItem
+class Bomb: public QObject, public QGraphicsRectItem
 {
     Q_OBJECT
 private:
@@ -20,11 +22,11 @@ private:
     int jBomb;
 public:
     friend class Player;
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
-    Bomb();
-//    Bomb(qreal x, qreal y);
-
-
+//    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+//    Bomb(QGraphicsItem * parent=0);
+    Bomb(qreal x, qreal y);
+    void destroyItem(qreal x, qreal y, Bomb* bomb, Map& map);
+    void setPosition(int x, int y);
 
 
 //    void bombDetonation();
@@ -39,9 +41,9 @@ public:
   //  void setBomb (Player player, Map& map);
 //try destroy
    // void chooseATarget(Player& player, Enemies& enemy, Bomb bomb, int iBombCurrent, int jBombCurrent,
-//                       Map& map, cellType type);
+//                       Map& map, CellType type);
 ////check neighbors
-//    void destroyObjects(Player& player, Enemies& enemy, Bomb bomb, Map& map, cellType type);
+//    void destroyObjects(Player& player, Enemies& enemy, Bomb bomb, Map& map, CellType type);
 
 //    void destroyBlocks(Map& map);
 

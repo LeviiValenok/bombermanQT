@@ -29,12 +29,14 @@ set(PROJECT_SOURCES
         resourses.qrc
         Bomberman.cpp
         Bomberman.h
-        DestroyedBlock.cpp
-        DestroyedBlock.h
-        Indestructible.cpp
-        Indestructible.h
-
-)
+        DestructibleBlock.cpp
+        DestructibleBlock.h
+        IndestructibleBlock.cpp
+        IndestructibleBlock.h
+#        Block.cpp
+#        Block.h
+        MapCell.cpp
+        MapCell.h constants.h EmptyBlock.cpp EmptyBlock.h)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(bombermanQT
@@ -49,13 +51,13 @@ else()
     if(ANDROID)
         add_library(bombermanQT SHARED
             ${PROJECT_SOURCES}
-        )
+                MapCell.cpp MapCell.h)
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         add_executable(bombermanQT
             ${PROJECT_SOURCES}
-        )
+                MapCell.cpp MapCell.h)
     endif()
 endif()
 

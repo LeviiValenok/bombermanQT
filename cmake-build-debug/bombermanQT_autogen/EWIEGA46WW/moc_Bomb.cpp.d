@@ -110,7 +110,6 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iterator \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
@@ -194,6 +193,9 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QList \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QObject \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/QRect \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/QSize \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/QSizeF \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qanystringview.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qarraydata.h \
@@ -214,6 +216,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qcontainerinfo.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qcontiguouscache.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/qcoreevent.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qdatastream.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qdebug.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qflags.h \
@@ -222,18 +225,21 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qhash.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/qiodevice.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qiterable.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qiterator.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qline.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qlist.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qlogging.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/qloggingcategory.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qmap.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qmargins.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qmath.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qmetacontainer.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qmetatype.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qnamespace.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/qnativeinterface.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qnumeric.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qobject.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qobject_impl.h \
@@ -241,6 +247,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qobjectdefs_impl.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qpair.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qpoint.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/qpointer.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qproperty.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qpropertyprivate.h \
@@ -269,31 +276,42 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qtextstream.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qtypeinfo.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/qurl.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qvariant.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qversiontagging.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/QPaintEvent \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/QPainter \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/QTransform \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qbrush.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qcolor.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qevent.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qeventpoint.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qfont.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontinfo.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontmetrics.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qimage.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qinputdevice.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainter.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainterpath.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpen.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpixmap.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qpointingdevice.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpolygon.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qregion.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgb.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qscreen.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtextoption.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtransform.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qvector2d.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qvectornd.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsItem \
@@ -306,8 +324,10 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsscene.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/University/CourseWork/bombermanQT/DestroyedBlock.h \
+  C:/University/CourseWork/bombermanQT/DestructibleBlock.h \
+  C:/University/CourseWork/bombermanQT/EmptyBlock.h \
   C:/University/CourseWork/bombermanQT/Enemies.h \
-  C:/University/CourseWork/bombermanQT/Indestructible.h \
   C:/University/CourseWork/bombermanQT/Map.h \
-  C:/University/CourseWork/bombermanQT/Player.h
+  C:/University/CourseWork/bombermanQT/MapCell.h \
+  C:/University/CourseWork/bombermanQT/Player.h \
+  C:/University/CourseWork/bombermanQT/constants.h

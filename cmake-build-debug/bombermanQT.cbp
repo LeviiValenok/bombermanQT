@@ -140,22 +140,34 @@
 		<Unit filename="C:/University/CourseWork/bombermanQT/Bomberman.h">
 			<Option target="bombermanQT"/>
 		</Unit>
-		<Unit filename="C:/University/CourseWork/bombermanQT/DestroyedBlock.cpp">
+		<Unit filename="C:/University/CourseWork/bombermanQT/DestructibleBlock.cpp">
 			<Option target="bombermanQT"/>
 		</Unit>
-		<Unit filename="C:/University/CourseWork/bombermanQT/DestroyedBlock.h">
+		<Unit filename="C:/University/CourseWork/bombermanQT/DestructibleBlock.h">
 			<Option target="bombermanQT"/>
 		</Unit>
-		<Unit filename="C:/University/CourseWork/bombermanQT/Indestructible.cpp">
+		<Unit filename="C:/University/CourseWork/bombermanQT/EmptyBlock.cpp">
 			<Option target="bombermanQT"/>
 		</Unit>
-		<Unit filename="C:/University/CourseWork/bombermanQT/Indestructible.h">
+		<Unit filename="C:/University/CourseWork/bombermanQT/EmptyBlock.h">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/IndestructibleBlock.h">
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/Map.cpp">
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/Map.h">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/MapCell.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/MapCell.h">
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/Player.cpp">
@@ -171,6 +183,9 @@
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/mocs_compilation.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/constants.h">
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/main.cpp">

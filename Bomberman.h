@@ -9,9 +9,11 @@
 #include <QGraphicsItem>
 
 #include "Map.h"
-#include "DestroyedBlock.h"
 #include "Player.h"
 //#include "Background.h"
+
+
+
 
 class Bomberman : public QGraphicsView
 {

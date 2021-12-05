@@ -25,7 +25,8 @@ Bomberman::Bomberman(QWidget* parent)
     setBackgroundBrush(QBrush(QImage(":/pictures/bombermanPic/ground.png")));
 
     map = new Map(scene);
-    player = new Player();
+//    map->instance();
+    player = new Player(*map);
 //    background = new Background();
 
 
@@ -34,14 +35,8 @@ Bomberman::Bomberman(QWidget* parent)
     player->setFocus();
 
 //    scene->addItem(background);
-    scene ->addItem(map);
+//    scene ->addItem(map);
     scene->addItem(player);
-
-
-//    scene->addItem(new DestroyedBlock(200, 0));
-//    scene->addItem(new DestroyedBlock(200, 150));
-//    scene->addItem(new DestroyedBlock(300, 150));
-//    scene->addItem(new DestroyedBlock(400, 150));
 
     // add the player, map and blocks to the scene
 
