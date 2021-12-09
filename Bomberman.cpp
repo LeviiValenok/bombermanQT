@@ -20,14 +20,27 @@ Bomberman::Bomberman(QWidget* parent)
     setBackgroundBrush(QBrush(QImage(":/pictures/bombermanPic/ground.png")));
 
     map = new Map(scene);
-    player = new Player(*map);
-    enemy = new EnemyMoveUpDown(UP_DOWN, 410, 110, *map);
+
+    health = new Health();
+    health->setPos(health->x(),health->y()+25);
+    scene->addItem(health);
+
+    player = new Player(*map, *health);
+
+    enemyUpDown = new EnemyMoveUpDown(UP_DOWN, 410, 110, *map, *player);
+    enemyLeftRight = new EnemyMoveLeftRight(LEFT_TO_RIGHT, 100, 400, *map, *player);
 
     player->setRect(0, 0, 75, 75);
     player->setFlag(QGraphicsItem::ItemIsFocusable);
     player->setFocus();
-    scene->addItem(enemy);
+
+
+    scene->addItem(enemyUpDown);
+    scene->addItem(enemyLeftRight);
     scene->addItem(player);
+
+
+
     show();
-//    enemy->moveEnemy();
+//    enemyUpDown->moveEnemyUpDown();
 }

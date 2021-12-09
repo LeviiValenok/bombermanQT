@@ -6,13 +6,14 @@
 #include "Player.h"
 
 
-Enemies :: Enemies(DirectionOfTravel setDirection, int x, int y, Map& map): map(&map)
+Enemies :: Enemies(DirectionOfTravel setDirection, int x, int y, Map& map, Player& player): map(&map), player(&player)
 {
     direction =  setDirection;
     xEnemy = x;
     yEnemy = y;
 
 }
+
 
 Enemies :: ~Enemies()
 {
@@ -33,15 +34,15 @@ void Enemies :: addItems()
     if (enemyUP->map->table[])
     if ((mtable[iEnemy/blockSize][jEnemy/blockSize])->type == EMPTY)
     {
-        Enemies *enemy = new Enemies();
-        enemy->setRect(jEnemy, iEnemy, enemySize, enemySize);
-        scene->addItem(enemy);
+        Enemies *enemyUpDown = new Enemies();
+        enemyUpDown->setRect(jEnemy, iEnemy, enemySize, enemySize);
+        scene->addItem(enemyUpDown);
     }
 }
 */
 
 
-//void Enemies :: move(Map& map, Enemies& enemy)
+//void Enemies :: move(Map& map, Enemies& enemyUpDown)
 //{
 //    int blockSize = 100;
 //    int enemySize = 75;
@@ -54,11 +55,11 @@ void Enemies :: addItems()
 //    }
 
 
-/*void Enemies :: collisionWithPlayer(Player player, Enemies enemy)
+/*void Enemies :: collisionWithPlayer(Player player, Enemies enemyUpDown)
 {
     int iPlayer = player.iPlayer;
     int jPlayer = player.jPlayer;
-    if (enemy.enemiesCoordinate[iEnemy][jEnemy] == player.playerCoordinate[iPlayer][jPlayer])
+    if (enemyUpDown.enemiesCoordinate[iEnemy][jEnemy] == player.playerCoordinate[iPlayer][jPlayer])
     {
         player.health--;
         if (player.health == 0)

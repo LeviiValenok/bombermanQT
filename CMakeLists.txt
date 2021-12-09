@@ -42,7 +42,9 @@ set(PROJECT_SOURCES
         EmptyBlock.h
         EnemyMoveUpDown.cpp
         EnemyMoveUpDown.h
-        )
+        EnemyMoveLeftRight.cpp
+        EnemyMoveLeftRight.h
+        Health.cpp Health.h)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(bombermanQT

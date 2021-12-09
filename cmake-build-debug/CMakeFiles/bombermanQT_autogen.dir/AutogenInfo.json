@@ -272,9 +272,21 @@
 			null
 		],
 		[
+			"C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.h",
+			"MU",
+			"EWIEGA46WW/moc_EnemyMoveLeftRight.cpp",
+			null
+		],
+		[
 			"C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.h",
 			"MU",
 			"EWIEGA46WW/moc_EnemyMoveUpDown.cpp",
+			null
+		],
+		[
+			"C:/University/CourseWork/bombermanQT/Health.h",
+			"MU",
+			"EWIEGA46WW/moc_Health.cpp",
 			null
 		],
 		[
@@ -388,10 +400,16 @@
 		[ "C:/University/CourseWork/bombermanQT/EmptyBlock.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/Enemies.cpp", "MU", null ],
 		[
+			"C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.cpp",
 			"MU",
 			null
 		],
+		[ "C:/University/CourseWork/bombermanQT/Health.cpp", "MU", null ],
 		[
 			"C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp",
 			"MU",

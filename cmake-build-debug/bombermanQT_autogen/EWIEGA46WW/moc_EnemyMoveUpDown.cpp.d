@@ -319,6 +319,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsRectItem \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsScene \
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsTextItem \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsitem.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsscene.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qtwidgets-config.h \
@@ -326,6 +327,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/University/CourseWork/bombermanQT/DestructibleBlock.h \
   C:/University/CourseWork/bombermanQT/EmptyBlock.h \
   C:/University/CourseWork/bombermanQT/Enemies.h \
+  C:/University/CourseWork/bombermanQT/Health.h \
   C:/University/CourseWork/bombermanQT/Map.h \
   C:/University/CourseWork/bombermanQT/MapCell.h \
   C:/University/CourseWork/bombermanQT/Player.h \

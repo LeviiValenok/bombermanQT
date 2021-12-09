@@ -158,10 +158,22 @@
 		<Unit filename="C:/University/CourseWork/bombermanQT/Enemies.h">
 			<Option target="bombermanQT"/>
 		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.h">
+			<Option target="bombermanQT"/>
+		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.cpp">
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.h">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/Health.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/Health.h">
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp">

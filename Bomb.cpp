@@ -143,21 +143,21 @@ void Bomb :: setBomb (Player player, Map& map)
 }
 
 
-void Bomb :: destroyEnemies(Enemies& enemy, Player& player, Map map)
+void Bomb :: destroyEnemies(Enemies& enemyUpDown, Player& player, Map map)
 {
     //TODO: timer???
-    //TODO: Change enemy's coordinate to current enemy coordinate
-    //TODO: Get current enemy coordinate
-    int iEnemyCurrent = enemy.iEnemy;
-    int jEnemyCurrent = enemy.jEnemy;
-    int enemyCurrentLocation = enemy.enemiesCoordinate[iEnemyCurrent][jEnemyCurrent];
+    //TODO: Change enemyUpDown's coordinate to current enemyUpDown coordinate
+    //TODO: Get current enemyUpDown coordinate
+    int iEnemyCurrent = enemyUpDown.iEnemy;
+    int jEnemyCurrent = enemyUpDown.jEnemy;
+    int enemyCurrentLocation = enemyUpDown.enemiesCoordinate[iEnemyCurrent][jEnemyCurrent];
     if (bombCoordinate[iBomb][jBomb] == enemyCurrentLocation ||
         bombCoordinate[iBomb + 1][jBomb] == enemyCurrentLocation ||
         bombCoordinate[iBomb - 1][jBomb] == enemyCurrentLocation ||
         bombCoordinate[iBomb][jBomb + 1] == enemyCurrentLocation ||
         bombCoordinate[iBomb][jBomb - 1] == enemyCurrentLocation)
     {
-        //destroy an enemy
+        //destroy an enemyUpDown
         player.score++;
     }
 }
@@ -180,7 +180,7 @@ void Bomb :: killPlayer(Player player, Map map)
 }
 
 //try destroy
-void  Bomb :: chooseATarget(Player& player, Enemies& enemy, Bomb bomb, int iBombCurrent, int jBombCurrent, Map& map, CellType type)
+void  Bomb :: chooseATarget(Player& player, Enemies& enemyUpDown, Bomb bomb, int iBombCurrent, int jBombCurrent, Map& map, CellType type)
 {
     switch (bomb.bombCoordinate[iBombCurrent][jBombCurrent])
     {
@@ -191,7 +191,7 @@ void  Bomb :: chooseATarget(Player& player, Enemies& enemy, Bomb bomb, int iBomb
         }
         case Eenemies:
         {
-            //destroy enemy;
+            //destroy enemyUpDown;
             break;
         }
         case Eplayer:
@@ -205,37 +205,37 @@ void  Bomb :: chooseATarget(Player& player, Enemies& enemy, Bomb bomb, int iBomb
     }
 }
 //check neighbors
-void Bomb :: destroyObjects(Player& player, Enemies& enemy, Bomb bomb, Map& map, CellType type)
+void Bomb :: destroyObjects(Player& player, Enemies& enemyUpDown, Bomb bomb, Map& map, CellType type)
 {
     int iPlayerCurrent = player.iPlayer;
     int jPlayerCurrent = player.jPlayer;
-    int iEnemyCurrent = enemy.iEnemy;
-    int jEnemyCurrent = enemy.jEnemy;
+    int iEnemyCurrent = enemyUpDown.iEnemy;
+    int jEnemyCurrent = enemyUpDown.jEnemy;
 
     if (bomb.bombCoordinate[iBomb][jBomb] == DESTRUCTIBLE_BLOCK ||
         bomb.bombCoordinate[iBomb][jBomb] == Eenemies || bomb.bombCoordinate[iBomb][jBomb] == Eplayer)
     {
-        chooseATarget(player, enemy, bomb, iBomb, jBomb, map, type);
+        chooseATarget(player, enemyUpDown, bomb, iBomb, jBomb, map, type);
     }
     if (bomb.bombCoordinate[iBomb + 1][jBomb] == DESTRUCTIBLE_BLOCK ||
         bomb.bombCoordinate[iBomb + 1][jBomb] == Eenemies || bomb.bombCoordinate[iBomb + 1][jBomb] == Eplayer)
     {
-        chooseATarget(player, enemy, bomb, iBomb + 1, jBomb, map, type);
+        chooseATarget(player, enemyUpDown, bomb, iBomb + 1, jBomb, map, type);
     }
     if (bomb.bombCoordinate[iBomb - 1][jBomb] == DESTRUCTIBLE_BLOCK ||
         bomb.bombCoordinate[iBomb - 1][jBomb] == Eenemies || bomb.bombCoordinate[iBomb - 1][jBomb] == Eplayer)
     {
-        chooseATarget(player, enemy, bomb, iBomb - 1, jBomb, map, type);
+        chooseATarget(player, enemyUpDown, bomb, iBomb - 1, jBomb, map, type);
     }
     if (bomb.bombCoordinate[iBomb][jBomb + 1] == DESTRUCTIBLE_BLOCK ||
         bomb.bombCoordinate[iBomb][jBomb + 1] == Eenemies || bomb.bombCoordinate[iBomb][jBomb + 1] == Eplayer)
     {
-        chooseATarget(player, enemy, bomb, iBomb, jBomb + 1, map, type);
+        chooseATarget(player, enemyUpDown, bomb, iBomb, jBomb + 1, map, type);
     }
     if (bomb.bombCoordinate[iBomb][jBomb - 1] == DESTRUCTIBLE_BLOCK ||
         bomb.bombCoordinate[iBomb][jBomb - 1] == Eenemies || bomb.bombCoordinate[iBomb][jBomb - 1] == Eplayer)
     {
-        chooseATarget(player, enemy, bomb, iBomb, jBomb - 1, map, type);
+        chooseATarget(player, enemyUpDown, bomb, iBomb, jBomb - 1, map, type);
     }
 }
 

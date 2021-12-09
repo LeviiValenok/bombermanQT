@@ -23,18 +23,18 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_EnemyMoveUpDown_t {
     const uint offsetsAndSize[6];
-    char stringdata0[27];
+    char stringdata0[33];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_EnemyMoveUpDown_t, stringdata0) + ofs), len 
 static const qt_meta_stringdata_EnemyMoveUpDown_t qt_meta_stringdata_EnemyMoveUpDown = {
     {
 QT_MOC_LITERAL(0, 15), // "EnemyMoveUpDown"
-QT_MOC_LITERAL(16, 9), // "moveEnemy"
-QT_MOC_LITERAL(26, 0) // ""
+QT_MOC_LITERAL(16, 15), // "moveEnemyUpDown"
+QT_MOC_LITERAL(32, 0) // ""
 
     },
-    "EnemyMoveUpDown\0moveEnemy\0"
+    "EnemyMoveUpDown\0moveEnemyUpDown\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -66,7 +66,7 @@ void EnemyMoveUpDown::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         auto *_t = static_cast<EnemyMoveUpDown *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->moveEnemy(); break;
+        case 0: _t->moveEnemyUpDown(); break;
         default: ;
         }
     }

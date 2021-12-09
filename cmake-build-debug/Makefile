@@ -261,6 +261,30 @@ Enemies.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Enemies.cpp.s
 .PHONY : Enemies.cpp.s
 
+EnemyMoveLeftRight.obj: EnemyMoveLeftRight.cpp.obj
+.PHONY : EnemyMoveLeftRight.obj
+
+# target to build an object file
+EnemyMoveLeftRight.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj
+.PHONY : EnemyMoveLeftRight.cpp.obj
+
+EnemyMoveLeftRight.i: EnemyMoveLeftRight.cpp.i
+.PHONY : EnemyMoveLeftRight.i
+
+# target to preprocess a source file
+EnemyMoveLeftRight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.i
+.PHONY : EnemyMoveLeftRight.cpp.i
+
+EnemyMoveLeftRight.s: EnemyMoveLeftRight.cpp.s
+.PHONY : EnemyMoveLeftRight.s
+
+# target to generate assembly for a file
+EnemyMoveLeftRight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.s
+.PHONY : EnemyMoveLeftRight.cpp.s
+
 EnemyMoveUpDown.obj: EnemyMoveUpDown.cpp.obj
 .PHONY : EnemyMoveUpDown.obj
 
@@ -284,6 +308,30 @@ EnemyMoveUpDown.s: EnemyMoveUpDown.cpp.s
 EnemyMoveUpDown.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.s
 .PHONY : EnemyMoveUpDown.cpp.s
+
+Health.obj: Health.cpp.obj
+.PHONY : Health.obj
+
+# target to build an object file
+Health.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Health.cpp.obj
+.PHONY : Health.cpp.obj
+
+Health.i: Health.cpp.i
+.PHONY : Health.i
+
+# target to preprocess a source file
+Health.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Health.cpp.i
+.PHONY : Health.cpp.i
+
+Health.s: Health.cpp.s
+.PHONY : Health.s
+
+# target to generate assembly for a file
+Health.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Health.cpp.s
+.PHONY : Health.cpp.s
 
 IndestructibleBlock.obj: IndestructibleBlock.cpp.obj
 .PHONY : IndestructibleBlock.obj
@@ -502,9 +550,15 @@ help:
 	@echo ... Enemies.obj
 	@echo ... Enemies.i
 	@echo ... Enemies.s
+	@echo ... EnemyMoveLeftRight.obj
+	@echo ... EnemyMoveLeftRight.i
+	@echo ... EnemyMoveLeftRight.s
 	@echo ... EnemyMoveUpDown.obj
 	@echo ... EnemyMoveUpDown.i
 	@echo ... EnemyMoveUpDown.s
+	@echo ... Health.obj
+	@echo ... Health.i
+	@echo ... Health.s
 	@echo ... IndestructibleBlock.obj
 	@echo ... IndestructibleBlock.i
 	@echo ... IndestructibleBlock.s

@@ -18,7 +18,7 @@
 //    setPixmap(QPixmap(":/pictures/bombermanPic/player.png"));
 //}
 
-Player::Player(Map &map, QGraphicsItem *parent): QGraphicsRectItem(parent), map(&map)
+Player::Player(Map &map, Health& health,  QGraphicsItem *parent): QGraphicsRectItem(parent), map(&map), health(&health)
 {
 
 }
@@ -96,8 +96,8 @@ void Player :: keyPressEvent(QKeyEvent *event)
 
 //void Player :: spawnEnemy()
 //{
-//    EnemyMoveUpDown* enemy = new EnemyMoveUpDown(UP_DOWN);
-//    scene()->addItem(enemy);
+//    EnemyMoveUpDown* enemyUpDown = new EnemyMoveUpDown(UP_DOWN);
+//    scene()->addItem(enemyUpDown);
 //}
 
 //сделать по границам клетки пермещение и коллизию так же

@@ -8,23 +8,24 @@
 
 
 #include "Map.h"
-
+#include "Health.h"
 #include <stdbool.h>
 
 class Player : public QObject, public QGraphicsRectItem
 {
     Q_OBJECT
-private:
-        int **playerCoordinate;
-        int xPlayer;
-        int yPlayer;
+
+
 
 public:
+    int xPlayer;
+    int yPlayer;
 //    Player(QGraphicsItem * parent= 0);
-    Player( Map &map, QGraphicsItem * parent=0);
-    int health = 3;
-    int score = 0;
+    Player( Map& map, Health& health, QGraphicsItem * parent=0);
+
+    int playerSize = 75;
     Map* map;
+    Health* health;
 
 //    Player(int i, int j, Map& map);
 //    int getIPosition();

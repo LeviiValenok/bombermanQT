@@ -11,6 +11,8 @@
 #include "Map.h"
 #include "Player.h"
 #include "EnemyMoveUpDown.h"
+#include "EnemyMoveLeftRight.h"
+#include "Health.h"
 //#include "Background.h"
 
 
@@ -23,7 +25,9 @@ public:
     QGraphicsScene * scene;
     Map* map;
     Player* player;
-    EnemyMoveUpDown* enemy;
+    EnemyMoveUpDown* enemyUpDown;
+    EnemyMoveLeftRight* enemyLeftRight;
+    Health* health;
 //    Background* background;
 };
 

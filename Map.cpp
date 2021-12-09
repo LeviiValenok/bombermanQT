@@ -49,8 +49,8 @@ void Map::outputField(QGraphicsScene *scene)
                    }
                 }
             }
-//    EnemyMoveUpDown* enemy = new EnemyMoveUpDown(UP_DOWN);
-//        scene->addItem(enemy);
+//    EnemyMoveUpDown* enemyUpDown = new EnemyMoveUpDown(UP_DOWN);
+//        scene->addItem(enemyUpDown);
 }
 
 

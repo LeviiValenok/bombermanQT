@@ -39,14 +39,14 @@ public:
 //    Bomb();
   //  void setBomb (Player player, Map& map);
 //try destroy
-   // void chooseATarget(Player& player, Enemies& enemy, Bomb bomb, int iBombCurrent, int jBombCurrent,
+   // void chooseATarget(Player& player, Enemies& enemyUpDown, Bomb bomb, int iBombCurrent, int jBombCurrent,
 //                       Map& map, CellType type);
 ////check neighbors
-//    void destroyObjects(Player& player, Enemies& enemy, Bomb bomb, Map& map, CellType type);
+//    void destroyObjects(Player& player, Enemies& enemyUpDown, Bomb bomb, Map& map, CellType type);
 
 //    void destroyBlocks(Map& map);
 
-//    void destroyEnemies(Enemies& enemy, Player& player, Map map);
+//    void destroyEnemies(Enemies& enemyUpDown, Player& player, Map map);
 
 //    void killPlayer(Player player, Map map);
 
