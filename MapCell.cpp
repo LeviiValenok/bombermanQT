@@ -3,6 +3,7 @@
 //
 
 #include "MapCell.h"
+
 #include <QGraphicsScene>
 
 MapCell::MapCell(CellType cellType)

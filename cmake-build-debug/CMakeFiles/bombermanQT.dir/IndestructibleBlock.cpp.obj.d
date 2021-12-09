@@ -316,6 +316,8 @@ CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj: \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/qobject.h \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsItem \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsRectItem \
+ C:\University\CourseWork\bombermanQT\MapCell.h \
+ C:\University\CourseWork\bombermanQT\constants.h \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsScene \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsscene.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qbrush.h \

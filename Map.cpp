@@ -40,14 +40,17 @@ void Map::outputField(QGraphicsScene *scene)
                        EmptyBlock* emptyBlock = new EmptyBlock(EMPTY);
                        table[i][j] = emptyBlock;
                     }
-//                   if(initializationsTable[i][j] == INDESTRUCTIBLE_BLOCK)
-//                   {
-//                       Map* indestrictableBlock = new IndestructibleBlock();
-//                       indestrictableBlock->setRect(j*100, i*100, 100, 100);
-//                       scene->addItem(indestrictableBlock);
-//                   }
+                   if(initializationsTable[i][j] == INDESTRUCTIBLE_BLOCK)
+                   {
+                       IndestructibleBlock* indestrictableBlock = new IndestructibleBlock(j, i, INDESTRUCTIBLE_BLOCK);
+                       indestrictableBlock->setRect(j*100, i*100, 100, 100);
+                       scene->addItem(indestrictableBlock);
+                       table[i][j] = indestrictableBlock;
+                   }
                 }
             }
+//    EnemyMoveUpDown* enemy = new EnemyMoveUpDown(UP_DOWN);
+//        scene->addItem(enemy);
 }
 
 

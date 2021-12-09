@@ -7,8 +7,8 @@
 //    setPixmap(QPixmap(":/pictures/bombermanPic/doesntBroke.png"));
 //    setPos(x, y);
 //}
-
-IndestructibleBlock::IndestructibleBlock(QGraphicsItem *parent): QGraphicsRectItem(parent)
-{
-
-}
+//
+//IndestructibleBlock::IndestructibleBlock(QGraphicsItem *parent): QGraphicsRectItem(parent)
+//{
+//
+//}

@@ -6,7 +6,6 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -41,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "bombermanQT::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-bombermanQT-Debug-1ec95dc28aa5e8fd26c9.json",
+					"jsonFile" : "target-bombermanQT-Debug-db9d0c5e899fcc730ef9.json",
 					"name" : "bombermanQT",
 					"projectIndex" : 0
 				},
@@ -64,6 +63,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 2
 	}
 }

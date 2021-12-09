@@ -12,7 +12,7 @@
 #include <QGraphicsScene>
 #include <QList>
 #include <QGraphicsItem>
-
+#include <stdbool.h>
 #include <QDebug>
 
 
@@ -43,16 +43,48 @@ void Bomb :: destroyItem(qreal x, qreal y, Bomb* bomb, Map &map) {
     int xBomb = x;
     int yBomb = y;
     int bombSize = 75;
+    bool bombIsExploded = false;
 
-
-    if ((map.table[(yBomb - bombSize) / blockSize][(xBomb + bombSize) / blockSize])->type == DESTRUCTIBLE_BLOCK ||
-        ((map.table[(yBomb - bombSize) / blockSize][(xBomb) / blockSize])->type == DESTRUCTIBLE_BLOCK)) {
+    if ((yBomb - bombSize) > 0 && ((map.table[(yBomb - bombSize) / blockSize][(xBomb + bombSize) / blockSize])->type == DESTRUCTIBLE_BLOCK ||
+        ((map.table[(yBomb - bombSize) / blockSize][(xBomb) / blockSize])->type == DESTRUCTIBLE_BLOCK)))
+    {
        map.table[(yBomb - bombSize) / blockSize][xBomb / blockSize]->
        removeItem(map.table[(yBomb - bombSize) / blockSize][xBomb / blockSize]);
         map.table[(yBomb - bombSize) / blockSize][xBomb / blockSize]->type = EMPTY;
-       scene()->removeItem(bomb);
-
+        bombIsExploded = true;
     }
+
+    if(yBomb < 500 && ((map.table[(yBomb + 2* bombSize)/blockSize][(xBomb)/blockSize])->type == DESTRUCTIBLE_BLOCK ||
+    ((map.table[(yBomb + 2*bombSize)/blockSize][(xBomb+bombSize)/blockSize])->type == DESTRUCTIBLE_BLOCK)))
+    {
+        map.table[(yBomb + 2*bombSize)/blockSize][(xBomb+bombSize)/blockSize]->
+        removeItem(map.table[(yBomb + 2*bombSize)/blockSize][(xBomb+bombSize)/blockSize]);
+        map.table[(yBomb + 2*bombSize)/blockSize][(xBomb+bombSize)/blockSize]->type = EMPTY;
+        bombIsExploded = true;
+    }
+    if ((xBomb - bombSize) > 0 && ((map.table[yBomb/blockSize][xBomb/blockSize])->type == DESTRUCTIBLE_BLOCK ||
+            (map.table[yBomb/blockSize][(xBomb - bombSize)/blockSize])->type == DESTRUCTIBLE_BLOCK))
+    {
+        map.table[yBomb/blockSize][(xBomb - bombSize)/blockSize]->
+        removeItem(map.table[yBomb/blockSize][(xBomb - bombSize)/blockSize]);
+        map.table[yBomb/blockSize][(xBomb - bombSize)/blockSize]->type = EMPTY;
+        bombIsExploded = true;
+    }
+
+    if ((xBomb + bombSize) < 700 && ((map.table[yBomb/blockSize][(xBomb+bombSize)/blockSize])->type == DESTRUCTIBLE_BLOCK ||
+    (map.table[yBomb/blockSize][(xBomb + 2*bombSize)/blockSize])->type == DESTRUCTIBLE_BLOCK))
+    {
+        map.table[yBomb/blockSize][(xBomb + 2*bombSize)/blockSize]->
+        removeItem(map.table[yBomb/blockSize][(xBomb + 2*bombSize)/blockSize]);
+        map.table[yBomb/blockSize][(xBomb + 2*bombSize)/blockSize]->type = EMPTY;
+        bombIsExploded = true;
+    }
+
+    if (bombIsExploded)
+    {
+        scene()->removeItem(bomb);
+    }
+
 }
 
 

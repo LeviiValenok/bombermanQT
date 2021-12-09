@@ -400,4 +400,7 @@ CMakeFiles/bombermanQT.dir/main.cpp.obj: \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qframe.h \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qwidget.h \
- C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsscene.h
+ C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsscene.h \
+ C:\University\CourseWork\bombermanQT\EnemyMoveUpDown.h \
+ C:\University\CourseWork\bombermanQT\Enemies.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream

@@ -155,6 +155,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h \
@@ -290,4 +291,6 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsRectItem \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsitem.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qtwidgets-config.h \
-  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qtwidgetsglobal.h
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+  C:/University/CourseWork/bombermanQT/MapCell.h \
+  C:/University/CourseWork/bombermanQT/constants.h

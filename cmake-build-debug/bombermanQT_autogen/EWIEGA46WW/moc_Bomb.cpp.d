@@ -326,7 +326,6 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/University/CourseWork/bombermanQT/DestructibleBlock.h \
   C:/University/CourseWork/bombermanQT/EmptyBlock.h \
-  C:/University/CourseWork/bombermanQT/Enemies.h \
   C:/University/CourseWork/bombermanQT/Map.h \
   C:/University/CourseWork/bombermanQT/MapCell.h \
   C:/University/CourseWork/bombermanQT/Player.h \

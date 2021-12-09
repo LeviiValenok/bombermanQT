@@ -7,6 +7,7 @@
 
 #endif //BOMBERMANQT_CONSTANTS_H
 
+#include <stdbool.h>
 
 
 enum CellType

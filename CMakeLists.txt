@@ -22,8 +22,8 @@ set(PROJECT_SOURCES
         Player.h
         Map.cpp
         Map.h
-#        Enemies.cpp
-#        Enemies.h
+        Enemies.cpp
+        Enemies.h
         Bomb.cpp
         Bomb.h
         resourses.qrc
@@ -36,7 +36,13 @@ set(PROJECT_SOURCES
 #        Block.cpp
 #        Block.h
         MapCell.cpp
-        MapCell.h constants.h EmptyBlock.cpp EmptyBlock.h)
+        MapCell.h
+        constants.h
+        EmptyBlock.cpp
+        EmptyBlock.h
+        EnemyMoveUpDown.cpp
+        EnemyMoveUpDown.h
+        )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(bombermanQT

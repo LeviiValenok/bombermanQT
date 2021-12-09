@@ -40,7 +40,7 @@ public:
 //    bool youCanMoveLeft(Map map);
 //, Map &map
     void keyPressEvent(QKeyEvent * event);
-
+    void spawnEnemy();
     void setBomb(int xBomb, int yBomb, int bombSize);
     friend class Map;
 

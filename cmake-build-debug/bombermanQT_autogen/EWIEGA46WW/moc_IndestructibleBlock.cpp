@@ -61,7 +61,7 @@ void IndestructibleBlock::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
 }
 
 const QMetaObject IndestructibleBlock::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    QMetaObject::SuperData::link<MapCell::staticMetaObject>(),
     qt_meta_stringdata_IndestructibleBlock.offsetsAndSize,
     qt_meta_data_IndestructibleBlock,
     qt_static_metacall,
@@ -86,14 +86,12 @@ void *IndestructibleBlock::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_IndestructibleBlock.stringdata0))
         return static_cast<void*>(this);
-    if (!strcmp(_clname, "QGraphicsRectItem"))
-        return static_cast< QGraphicsRectItem*>(this);
-    return QObject::qt_metacast(_clname);
+    return MapCell::qt_metacast(_clname);
 }
 
 int IndestructibleBlock::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QObject::qt_metacall(_c, _id, _a);
+    _id = MapCell::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

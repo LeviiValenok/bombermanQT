@@ -316,6 +316,8 @@ CMakeFiles/bombermanQT.dir/Map.cpp.obj: \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/qobject.h \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsItem \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsRectItem \
+ C:\University\CourseWork\bombermanQT\MapCell.h \
+ C:\University\CourseWork\bombermanQT\constants.h \
  C:\University\CourseWork\bombermanQT\Map.h \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsScene \
  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsscene.h \
@@ -350,8 +352,6 @@ CMakeFiles/bombermanQT.dir/Map.cpp.obj: \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/qnativeinterface.h \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/qloggingcategory.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qkeysequence.h \
- C:\University\CourseWork\bombermanQT\MapCell.h \
- C:\University\CourseWork\bombermanQT\constants.h \
  C:\University\CourseWork\bombermanQT\EmptyBlock.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/QDebug \

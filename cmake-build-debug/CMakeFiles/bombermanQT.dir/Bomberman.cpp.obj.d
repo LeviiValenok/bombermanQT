@@ -373,6 +373,9 @@ CMakeFiles/bombermanQT.dir/Bomberman.cpp.obj: \
  C:\University\CourseWork\bombermanQT\Player.h \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/QList \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h \
+ C:\University\CourseWork\bombermanQT\EnemyMoveUpDown.h \
+ C:\University\CourseWork\bombermanQT\Enemies.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/QTimer \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/qtimer.h \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/qbasictimer.h \

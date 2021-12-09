@@ -6,14 +6,20 @@
 #include <QObject>
 #include <QGraphicsItem>
 #include <QGraphicsRectItem>
+#include "MapCell.h"
 
 
 //public QGraphicsPixmapItem
-class IndestructibleBlock: public QObject, public QGraphicsRectItem
+class IndestructibleBlock: public MapCell
 {
     Q_OBJECT
 public:
-    IndestructibleBlock(QGraphicsItem* parent = 0);
+//    IndestructibleBlock(QGraphicsItem* parent = 0);
+
+    IndestructibleBlock(int x, int y, CellType type, QGraphicsItem* parent = nullptr) : MapCell(type)
+    {
+
+    }
 };
 
 #endif // INDESTRUCTIBLE_H

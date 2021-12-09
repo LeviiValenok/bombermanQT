@@ -10,6 +10,7 @@
 
 #include "Map.h"
 #include "Player.h"
+#include "EnemyMoveUpDown.h"
 //#include "Background.h"
 
 
@@ -22,6 +23,7 @@ public:
     QGraphicsScene * scene;
     Map* map;
     Player* player;
+    EnemyMoveUpDown* enemy;
 //    Background* background;
 };
 

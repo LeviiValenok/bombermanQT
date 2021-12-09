@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include "Player.h"
 #include "Map.h"
-#include "Enemies.h"
 
 
 #include <QGraphicsRectItem>

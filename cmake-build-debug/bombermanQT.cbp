@@ -152,6 +152,18 @@
 		<Unit filename="C:/University/CourseWork/bombermanQT/EmptyBlock.h">
 			<Option target="bombermanQT"/>
 		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/Enemies.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/Enemies.h">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.h">
+			<Option target="bombermanQT"/>
+		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp">
 			<Option target="bombermanQT"/>
 		</Unit>

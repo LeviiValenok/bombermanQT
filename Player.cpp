@@ -1,5 +1,5 @@
 #include "Player.h"
-
+#include "EnemyMoveUpDown.h"
 #include "Bomb.h"
 #include "Map.h"
 #include <stdio.h>
@@ -94,6 +94,10 @@ void Player :: keyPressEvent(QKeyEvent *event)
 
 }
 
-
+//void Player :: spawnEnemy()
+//{
+//    EnemyMoveUpDown* enemy = new EnemyMoveUpDown(UP_DOWN);
+//    scene()->addItem(enemy);
+//}
 
 //сделать по границам клетки пермещение и коллизию так же
