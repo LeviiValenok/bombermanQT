@@ -22,4 +22,4 @@ public:
     }
 };
 
-#endif // INDESTRUCTIBLE_H
+#endif

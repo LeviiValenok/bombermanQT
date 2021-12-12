@@ -12,6 +12,14 @@ void EnemyMoveUpDown ::spawn(int x, int y)
     setRect(x, y, sizeEnemy, sizeEnemy);
 }
 
+
+/*(player->map->table[(player->yPlayer)/blockSize][(player->xPlayer) / blockSize] ==
+map->table[yEnemy/blockSize][(xEnemy + sizeEnemy)/blockSize]) ||
+(player->map->table[(player->yPlayer + player->playerSize)/blockSize][(player->xPlayer) / blockSize] ==
+map->table[yEnemy/blockSize][xEnemy/blockSize]) ||
+(player->map->table[(player->yPlayer)/blockSize][(player->xPlayer) / blockSize] ==
+map->table[yEnemy/blockSize][(xEnemy+sizeEnemy)/blockSize])*/
+
 void EnemyMoveUpDown :: moveEnemyUpDown()
 {
 
@@ -25,21 +33,30 @@ void EnemyMoveUpDown :: moveEnemyUpDown()
         if ((map->table[(yEnemy + step + sizeEnemy) / blockSize][xEnemy / blockSize])->type == EMPTY &&
             (yEnemy + step + sizeEnemy) < 570)
         {
-
             setPos(xEnemy, yEnemy + step);
 
-
-            if ((player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize) / blockSize] ==
+            if ((player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize)/blockSize] ==
                     map->table[yEnemy/blockSize][xEnemy/blockSize]) ||
-            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer) / blockSize] ==
+            (player->map->table[(player->yPlayer+ player->playerSize)/blockSize][(player->xPlayer + player->playerSize)/blockSize] ==
+                    map->table[(yEnemy+sizeEnemy)/blockSize][xEnemy/blockSize])||
+            ((player->map->table[(player->yPlayer + player->playerSize)/blockSize][(player->xPlayer + player->playerSize)/blockSize] ==
+                    map->table[yEnemy/blockSize][(xEnemy + sizeEnemy)/blockSize] ||
+            (player->map->table[(player->yPlayer + player->playerSize)/blockSize][(player->xPlayer)/blockSize] ==
+                    map->table[yEnemy/blockSize][xEnemy/blockSize]) ||
+            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer)/blockSize] ==
                     map->table[yEnemy/blockSize][(xEnemy + sizeEnemy)/blockSize]) ||
-            (player->map->table[(player->yPlayer + player->playerSize)/blockSize][(player->xPlayer) / blockSize] ==
-                     map->table[yEnemy/blockSize][xEnemy/blockSize]) ||
-            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer) / blockSize] ==
-                     map->table[yEnemy/blockSize][(xEnemy+sizeEnemy)/blockSize]))
+            (player->map->table[(player->yPlayer + player->playerSize)/blockSize][(player->xPlayer)/blockSize] ==
+                    map->table[(yEnemy + sizeEnemy)/blockSize][(xEnemy + sizeEnemy)/blockSize]) ||
+            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer)/blockSize] ==
+                    map->table[(yEnemy + sizeEnemy)/blockSize][(xEnemy)/blockSize]) ||
+            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize)/blockSize] ==
+                    map->table[(yEnemy + sizeEnemy)/blockSize][(xEnemy + sizeEnemy)/blockSize]))))
             {
-                player->health->decrease();
                 player->setPos(0, 0);
+                player->yPlayer = 0;
+                player->xPlayer = 0;
+                player->health->decrease();
+
             }
 
         }
@@ -54,17 +71,30 @@ void EnemyMoveUpDown :: moveEnemyUpDown()
             (yEnemy - step) > 0)
         {
             setPos(xEnemy, yEnemy - step);
-             if ((player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize) / blockSize] ==
+
+            if ((player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize) / blockSize] ==
                     map->table[yEnemy/blockSize][xEnemy/blockSize]) ||
-            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer) / blockSize] ==
+            (player->map->table[(player->yPlayer+ player->playerSize)/blockSize][(player->xPlayer + player->playerSize)/blockSize] ==
+                    map->table[(yEnemy+sizeEnemy)/blockSize][xEnemy/blockSize])||
+            ((player->map->table[(player->yPlayer + player->playerSize)/blockSize][(player->xPlayer + player->playerSize)/blockSize] ==
+                    map->table[yEnemy/blockSize][(xEnemy + sizeEnemy)/blockSize] ||
+            (player->map->table[(player->yPlayer + player->playerSize)/blockSize][(player->xPlayer)/blockSize] ==
+                    map->table[yEnemy/blockSize][xEnemy/blockSize]) ||
+            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer)/blockSize] ==
                     map->table[yEnemy/blockSize][(xEnemy + sizeEnemy)/blockSize]) ||
-            (player->map->table[(player->yPlayer + player->playerSize)/blockSize][(player->xPlayer) / blockSize] ==
-                     map->table[yEnemy/blockSize][xEnemy/blockSize]) ||
-            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer) / blockSize] ==
-                     map->table[yEnemy/blockSize][(xEnemy+sizeEnemy)/blockSize]))
+            (player->map->table[(player->yPlayer + player->playerSize)/blockSize][(player->xPlayer)/blockSize] ==
+                    map->table[(yEnemy + sizeEnemy)/blockSize][(xEnemy + sizeEnemy)/blockSize]) ||
+            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer)/blockSize] ==
+                    map->table[(yEnemy + sizeEnemy)/blockSize][(xEnemy)/blockSize]) ||
+            (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize)/blockSize] ==
+                    map->table[(yEnemy + sizeEnemy)/blockSize][(xEnemy + sizeEnemy)/blockSize]))))
             {
-                player->health->decrease();
                 player->setPos(0, 0);
+                player->yPlayer = 0;
+                player->xPlayer = 0;
+                player->health->decrease();
+
+
             }
         }
         else

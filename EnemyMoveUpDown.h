@@ -30,4 +30,4 @@ public:
 };
 
 
-#endif //BOMBERMANQT_ENEMYMOVEUPDOWN_H
+#endif

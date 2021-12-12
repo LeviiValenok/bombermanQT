@@ -5,8 +5,7 @@
 #ifndef BOMBERMANQT_CONSTANTS_H
 #define BOMBERMANQT_CONSTANTS_H
 
-#endif //BOMBERMANQT_CONSTANTS_H
-
+#endif
 #include <stdbool.h>
 
 

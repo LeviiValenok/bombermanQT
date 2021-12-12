@@ -12,4 +12,4 @@ public:
     Background(QGraphicsItem* parent = 0);
 };
 
-#endif // BACKGROUND_H
+#endif

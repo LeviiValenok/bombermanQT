@@ -1,6 +1,6 @@
+//#pragma once
 #ifndef MAP_H
 #define MAP_H
-
 
 #include <QGraphicsScene>
 #include <QGraphicsPathItem>
@@ -9,6 +9,7 @@
 
 #include "DestructibleBlock.h"
 #include "EmptyBlock.h"
+
 
 
 
@@ -32,4 +33,4 @@ class Map : public QObject, public QGraphicsPixmapItem
 };
 
 
-#endif // MAP_H
+#endif

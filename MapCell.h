@@ -31,4 +31,4 @@ public:
 };
 
 
-#endif //BOMBERMANQT_MAPCELL_H
+#endif

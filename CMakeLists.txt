@@ -27,8 +27,8 @@ set(PROJECT_SOURCES
         Bomb.cpp
         Bomb.h
         resourses.qrc
-        Bomberman.cpp
-        Bomberman.h
+        Game.cpp
+        Game.h
         DestructibleBlock.cpp
         DestructibleBlock.h
         IndestructibleBlock.cpp

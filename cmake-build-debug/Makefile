@@ -165,30 +165,6 @@ Bomb.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Bomb.cpp.s
 .PHONY : Bomb.cpp.s
 
-Bomberman.obj: Bomberman.cpp.obj
-.PHONY : Bomberman.obj
-
-# target to build an object file
-Bomberman.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Bomberman.cpp.obj
-.PHONY : Bomberman.cpp.obj
-
-Bomberman.i: Bomberman.cpp.i
-.PHONY : Bomberman.i
-
-# target to preprocess a source file
-Bomberman.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Bomberman.cpp.i
-.PHONY : Bomberman.cpp.i
-
-Bomberman.s: Bomberman.cpp.s
-.PHONY : Bomberman.s
-
-# target to generate assembly for a file
-Bomberman.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Bomberman.cpp.s
-.PHONY : Bomberman.cpp.s
-
 DestructibleBlock.obj: DestructibleBlock.cpp.obj
 .PHONY : DestructibleBlock.obj
 
@@ -308,6 +284,30 @@ EnemyMoveUpDown.s: EnemyMoveUpDown.cpp.s
 EnemyMoveUpDown.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.s
 .PHONY : EnemyMoveUpDown.cpp.s
+
+Game.obj: Game.cpp.obj
+.PHONY : Game.obj
+
+# target to build an object file
+Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Game.cpp.obj
+.PHONY : Game.cpp.obj
+
+Game.i: Game.cpp.i
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Game.cpp.s
+.PHONY : Game.cpp.s
 
 Health.obj: Health.cpp.obj
 .PHONY : Health.obj
@@ -538,9 +538,6 @@ help:
 	@echo ... Bomb.obj
 	@echo ... Bomb.i
 	@echo ... Bomb.s
-	@echo ... Bomberman.obj
-	@echo ... Bomberman.i
-	@echo ... Bomberman.s
 	@echo ... DestructibleBlock.obj
 	@echo ... DestructibleBlock.i
 	@echo ... DestructibleBlock.s
@@ -556,6 +553,9 @@ help:
 	@echo ... EnemyMoveUpDown.obj
 	@echo ... EnemyMoveUpDown.i
 	@echo ... EnemyMoveUpDown.s
+	@echo ... Game.obj
+	@echo ... Game.i
+	@echo ... Game.s
 	@echo ... Health.obj
 	@echo ... Health.i
 	@echo ... Health.s

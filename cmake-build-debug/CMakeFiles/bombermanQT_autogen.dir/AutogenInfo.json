@@ -248,12 +248,6 @@
 			null
 		],
 		[
-			"C:/University/CourseWork/bombermanQT/Bomberman.h",
-			"MU",
-			"EWIEGA46WW/moc_Bomberman.cpp",
-			null
-		],
-		[
 			"C:/University/CourseWork/bombermanQT/DestructibleBlock.h",
 			"MU",
 			"EWIEGA46WW/moc_DestructibleBlock.cpp",
@@ -281,6 +275,12 @@
 			"C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.h",
 			"MU",
 			"EWIEGA46WW/moc_EnemyMoveUpDown.cpp",
+			null
+		],
+		[
+			"C:/University/CourseWork/bombermanQT/Game.h",
+			"MU",
+			"EWIEGA46WW/moc_Game.cpp",
 			null
 		],
 		[
@@ -391,7 +391,6 @@
 	"SOURCES" : 
 	[
 		[ "C:/University/CourseWork/bombermanQT/Bomb.cpp", "MU", null ],
-		[ "C:/University/CourseWork/bombermanQT/Bomberman.cpp", "MU", null ],
 		[
 			"C:/University/CourseWork/bombermanQT/DestructibleBlock.cpp",
 			"MU",
@@ -409,6 +408,7 @@
 			"MU",
 			null
 		],
+		[ "C:/University/CourseWork/bombermanQT/Game.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/Health.cpp", "MU", null ],
 		[
 			"C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp",

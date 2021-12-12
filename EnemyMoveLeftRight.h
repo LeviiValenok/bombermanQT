@@ -35,7 +35,6 @@ public:
 
 
 
-#endif //BOMBERMANQT_ENEMYMOVELEFTRIGHT_H
-
+#endif
 
 

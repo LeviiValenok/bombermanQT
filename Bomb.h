@@ -1,6 +1,7 @@
 #ifndef BOMB_H
 #define BOMB_H
 
+
 #include <stdio.h>
 #include "Player.h"
 #include "Map.h"
@@ -8,7 +9,7 @@
 
 #include <QGraphicsRectItem>
 #include <QObject>
-#include <QPainter>
+#include <QTimer>
 #include <QGraphicsItem>
 #include <QGraphicsScene>
 
@@ -17,14 +18,16 @@ class Bomb: public QObject, public QGraphicsRectItem
     Q_OBJECT
 private:
     int **bombCoordinate;
-    int iBomb;
-    int jBomb;
+    int xBomb;
+    int yBomb;
+    Map* map;
+    QTimer* timer;
+public slots:
+    void destroyItem();
 public:
     friend class Player;
-//    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
-//    Bomb(QGraphicsItem * parent=0);
-    Bomb(qreal x, qreal y);
-    void destroyItem(qreal x, qreal y, Bomb* bomb, Map& map);
+    Bomb(qreal x, qreal y, Map& map);
+    ~Bomb();
     void setPosition(int x, int y);
 
 
@@ -52,4 +55,4 @@ public:
 
 };
 
-#endif // BOMB_H
+#endif

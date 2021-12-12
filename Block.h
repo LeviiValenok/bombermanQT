@@ -41,7 +41,6 @@ public:
 
 };
 
-#endif // BLOCK_H
-
+#endif
 //int xBlock, int yBlock, QGraphicsItem *parent): QGraphicsRectItem(parent)
 

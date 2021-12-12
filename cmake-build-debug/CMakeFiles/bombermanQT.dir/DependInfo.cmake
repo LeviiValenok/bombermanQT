@@ -9,12 +9,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/University/CourseWork/bombermanQT/Bomb.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Bomb.cpp.obj"
-  "C:/University/CourseWork/bombermanQT/Bomberman.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Bomberman.cpp.obj"
   "C:/University/CourseWork/bombermanQT/DestructibleBlock.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj"
   "C:/University/CourseWork/bombermanQT/EmptyBlock.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj"
   "C:/University/CourseWork/bombermanQT/Enemies.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Enemies.cpp.obj"
   "C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj"
   "C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj"
+  "C:/University/CourseWork/bombermanQT/Game.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Game.cpp.obj"
   "C:/University/CourseWork/bombermanQT/Health.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Health.cpp.obj"
   "C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj"
   "C:/University/CourseWork/bombermanQT/Map.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Map.cpp.obj"

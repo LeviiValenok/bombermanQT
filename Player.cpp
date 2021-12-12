@@ -1,10 +1,7 @@
 #include "Player.h"
 #include "EnemyMoveUpDown.h"
 #include "Bomb.h"
-#include "Map.h"
-#include <stdio.h>
-#include <conio.h>
-#include <stdbool.h>
+
 
 #include <QList>
 #include <QGraphicsScene>
@@ -13,14 +10,10 @@
 #include <QGraphicsRectItem>
 #include <QtDebug>
 
-//Player:: Player(QGraphicsItem *parent): QGraphicsPixmapItem(parent)
-//{
-//    setPixmap(QPixmap(":/pictures/bombermanPic/player.png"));
-//}
-
 Player::Player(Map &map, Health& health,  QGraphicsItem *parent): QGraphicsRectItem(parent), map(&map), health(&health)
 {
-
+    xPlayer = 0;
+    yPlayer = 0;
 }
 
 
@@ -82,12 +75,9 @@ void Player :: keyPressEvent(QKeyEvent *event)
         }
     }else if(event->key() == Qt::Key_Space)
     {
-        int xBomb = xPlayer;
-        int yBomb = yPlayer;
-        int bombSize = playerSize;
-        Bomb* bomb = new Bomb(xBomb, yBomb);
+        Bomb* bomb = new Bomb(xPlayer, yPlayer, *map);
         scene()->addItem(bomb);
-        bomb->destroyItem(xBomb, yBomb, bomb, *map);
+//        bomb->destroyItem(xBomb, yBomb, bomb, *map);
 
 
     }

@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif //BOMBERMANQT_EMPTYBLOCK_H
+#endif

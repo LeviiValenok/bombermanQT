@@ -18,4 +18,4 @@ private:
     int health;
 };
 
-#endif //BOMBERMANQT_HEALTH_H
+#endif

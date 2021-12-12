@@ -2,8 +2,8 @@
 #define ENEMIES_H
 
 #include <iostream>
-#include "Player.h"
 #include "Map.h"
+#include "Player.h"
 
 enum DirectionOfTravel
 {
@@ -32,4 +32,4 @@ public:
 };
 
 
-#endif  // ENEMIES_H
+#endif

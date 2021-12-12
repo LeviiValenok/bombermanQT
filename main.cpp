@@ -1,18 +1,18 @@
 #include "widget.h"
 #include <QApplication>
 #include "Player.h"
-#include "Bomberman.h"
+#include "Game.h"
 #include <QGraphicsScene>
 #include <QGraphicsView>
 
-Bomberman* bomberman;
+Game* bomberman;
 
 
 
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);
 
-    bomberman = new Bomberman();
+    bomberman = new Game();
     bomberman->show();
 
     return a.exec();

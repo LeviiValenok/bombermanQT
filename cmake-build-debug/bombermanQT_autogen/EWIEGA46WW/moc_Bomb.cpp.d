@@ -196,6 +196,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QRect \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QSize \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QSizeF \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/QTimer \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qanystringview.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qarraydata.h \
@@ -204,6 +205,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qatomic.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qbytearray.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qbytearraylist.h \
@@ -274,6 +276,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qtaggedpointer.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qtcore-config.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qtextstream.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/qtimer.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qtypeinfo.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qurl.h \
@@ -282,20 +285,16 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/QPaintEvent \
-  C:/Qt/6.2.0/mingw81_64/include/QtGui/QPainter \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/QTransform \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qbrush.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qcolor.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qevent.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qeventpoint.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qfont.h \
-  C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontinfo.h \
-  C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontmetrics.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qimage.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qinputdevice.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpaintdevice.h \
-  C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainter.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainterpath.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpen.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpixelformat.h \
@@ -306,7 +305,6 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgb.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgba64.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qscreen.h \
-  C:/Qt/6.2.0/mingw81_64/include/QtGui/qtextoption.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtransform.h \

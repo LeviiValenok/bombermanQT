@@ -19,7 +19,7 @@ void EnemyMoveLeftRight :: moveEnemyLeftRight() {
             (xEnemy + step + sizeEnemy) < 770)
         {
             setPos(xEnemy+step, yEnemy);
-            if ((player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize) / blockSize] ==
+            /*if ((player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize) / blockSize] ==
                  map->table[yEnemy/blockSize][xEnemy/blockSize]) ||
                 (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer) / blockSize] ==
                  map->table[yEnemy/blockSize][(xEnemy + sizeEnemy)/blockSize]) ||
@@ -30,7 +30,7 @@ void EnemyMoveLeftRight :: moveEnemyLeftRight() {
             {
                 player->health->decrease();
                 player->setPos(0, 0);
-            }
+            }*/
         }
         else
         {
@@ -43,7 +43,7 @@ void EnemyMoveLeftRight :: moveEnemyLeftRight() {
             (xEnemy - step) > 0)
         {
             setPos(xEnemy- step, yEnemy );
-            if ((player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize) / blockSize] ==
+           /* if ((player->map->table[(player->yPlayer)/blockSize][(player->xPlayer + player->playerSize) / blockSize] ==
                  map->table[yEnemy/blockSize][xEnemy/blockSize]) ||
                 (player->map->table[(player->yPlayer)/blockSize][(player->xPlayer) / blockSize] ==
                  map->table[yEnemy/blockSize][(xEnemy + sizeEnemy)/blockSize]) ||
@@ -54,7 +54,7 @@ void EnemyMoveLeftRight :: moveEnemyLeftRight() {
             {
                 player->health->decrease();
                 player->setPos(0, 0);
-            }
+            }*/
         } else
         {
             isSelectorLeftRight = true;

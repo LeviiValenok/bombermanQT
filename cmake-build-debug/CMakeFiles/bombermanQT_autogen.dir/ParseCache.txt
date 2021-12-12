@@ -199,6 +199,7 @@ C:/University/CourseWork/bombermanQT/Bomb.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/QRect
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/QSize
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/QSizeF
+ mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/QTimer
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qalgorithms.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qanystringview.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qarraydata.h
@@ -207,6 +208,7 @@ C:/University/CourseWork/bombermanQT/Bomb.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qatomic.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qatomic_cxx11.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qbasicatomic.h
+ mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qbasictimer.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qbytearray.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qbytearrayalgorithms.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qbytearraylist.h
@@ -277,6 +279,7 @@ C:/University/CourseWork/bombermanQT/Bomb.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qtaggedpointer.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qtcore-config.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qtextstream.h
+ mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qtimer.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qtmetamacros.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qtypeinfo.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qurl.h
@@ -285,20 +288,16 @@ C:/University/CourseWork/bombermanQT/Bomb.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qvarlengtharray.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtCore/qversiontagging.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/QPaintEvent
- mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/QPainter
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/QTransform
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qbrush.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qcolor.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qevent.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qeventpoint.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qfont.h
- mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontinfo.h
- mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontmetrics.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qimage.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qinputdevice.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qkeysequence.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qpaintdevice.h
- mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainter.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainterpath.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qpen.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qpixelformat.h
@@ -309,7 +308,6 @@ C:/University/CourseWork/bombermanQT/Bomb.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgb.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgba64.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qscreen.h
- mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qtextoption.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qtgui-config.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qtguiglobal.h
  mdp:C:/Qt/6.2.0/mingw81_64/include/QtGui/qtransform.h
@@ -1618,6 +1616,7 @@ C:/University/CourseWork/bombermanQT/IndestructibleBlock.h
  mdp:C:/University/CourseWork/bombermanQT/MapCell.h
  mdp:C:/University/CourseWork/bombermanQT/constants.h
 C:/University/CourseWork/bombermanQT/MapCell.h
+C:/University/CourseWork/bombermanQT/Game.h
 C:/University/CourseWork/bombermanQT/Player.h
  mmc:Q_OBJECT
  mdp:C:/University/CourseWork/bombermanQT/Player.h
@@ -2249,6 +2248,7 @@ C:/University/CourseWork/bombermanQT/Enemies.cpp
 C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp
 C:/University/CourseWork/bombermanQT/Map.cpp
 C:/University/CourseWork/bombermanQT/MapCell.cpp
+C:/University/CourseWork/bombermanQT/Game.cpp
 C:/University/CourseWork/bombermanQT/Player.cpp
 C:/University/CourseWork/bombermanQT/main.cpp
 C:/University/CourseWork/bombermanQT/widget.cpp
