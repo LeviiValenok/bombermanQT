@@ -104,19 +104,19 @@ CMakeFiles/bombermanQT.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\main.cpp -o CMakeFiles\bombermanQT.dir\main.cpp.s
 
-CMakeFiles/bombermanQT.dir/widget.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
-CMakeFiles/bombermanQT.dir/widget.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
-CMakeFiles/bombermanQT.dir/widget.cpp.obj: ../widget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bombermanQT.dir/widget.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\widget.cpp.obj -c C:\University\CourseWork\bombermanQT\widget.cpp
+CMakeFiles/bombermanQT.dir/Game.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
+CMakeFiles/bombermanQT.dir/Game.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
+CMakeFiles/bombermanQT.dir/Game.cpp.obj: ../Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bombermanQT.dir/Game.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\Game.cpp.obj -c C:\University\CourseWork\bombermanQT\Game.cpp
 
-CMakeFiles/bombermanQT.dir/widget.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/widget.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\widget.cpp > CMakeFiles\bombermanQT.dir\widget.cpp.i
+CMakeFiles/bombermanQT.dir/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/Game.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\Game.cpp > CMakeFiles\bombermanQT.dir\Game.cpp.i
 
-CMakeFiles/bombermanQT.dir/widget.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/widget.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\widget.cpp -o CMakeFiles\bombermanQT.dir\widget.cpp.s
+CMakeFiles/bombermanQT.dir/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/Game.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\Game.cpp -o CMakeFiles\bombermanQT.dir\Game.cpp.s
 
 CMakeFiles/bombermanQT.dir/Player.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
 CMakeFiles/bombermanQT.dir/Player.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
@@ -146,108 +146,24 @@ CMakeFiles/bombermanQT.dir/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/Map.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\Map.cpp -o CMakeFiles\bombermanQT.dir\Map.cpp.s
 
-CMakeFiles/bombermanQT.dir/Enemies.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
-CMakeFiles/bombermanQT.dir/Enemies.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
-CMakeFiles/bombermanQT.dir/Enemies.cpp.obj: ../Enemies.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/bombermanQT.dir/Enemies.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\Enemies.cpp.obj -c C:\University\CourseWork\bombermanQT\Enemies.cpp
+CMakeFiles/bombermanQT.dir/Enemy.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
+CMakeFiles/bombermanQT.dir/Enemy.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
+CMakeFiles/bombermanQT.dir/Enemy.cpp.obj: ../Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/bombermanQT.dir/Enemy.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\Enemy.cpp.obj -c C:\University\CourseWork\bombermanQT\Enemy.cpp
 
-CMakeFiles/bombermanQT.dir/Enemies.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/Enemies.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\Enemies.cpp > CMakeFiles\bombermanQT.dir\Enemies.cpp.i
+CMakeFiles/bombermanQT.dir/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/Enemy.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\Enemy.cpp > CMakeFiles\bombermanQT.dir\Enemy.cpp.i
 
-CMakeFiles/bombermanQT.dir/Enemies.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/Enemies.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\Enemies.cpp -o CMakeFiles\bombermanQT.dir\Enemies.cpp.s
-
-CMakeFiles/bombermanQT.dir/Bomb.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
-CMakeFiles/bombermanQT.dir/Bomb.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
-CMakeFiles/bombermanQT.dir/Bomb.cpp.obj: ../Bomb.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/bombermanQT.dir/Bomb.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\Bomb.cpp.obj -c C:\University\CourseWork\bombermanQT\Bomb.cpp
-
-CMakeFiles/bombermanQT.dir/Bomb.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/Bomb.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\Bomb.cpp > CMakeFiles\bombermanQT.dir\Bomb.cpp.i
-
-CMakeFiles/bombermanQT.dir/Bomb.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/Bomb.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\Bomb.cpp -o CMakeFiles\bombermanQT.dir\Bomb.cpp.s
-
-CMakeFiles/bombermanQT.dir/Game.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
-CMakeFiles/bombermanQT.dir/Game.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
-CMakeFiles/bombermanQT.dir/Game.cpp.obj: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/bombermanQT.dir/Game.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\Game.cpp.obj -c C:\University\CourseWork\bombermanQT\Game.cpp
-
-CMakeFiles/bombermanQT.dir/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/Game.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\Game.cpp > CMakeFiles\bombermanQT.dir\Game.cpp.i
-
-CMakeFiles/bombermanQT.dir/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/Game.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\Game.cpp -o CMakeFiles\bombermanQT.dir\Game.cpp.s
-
-CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
-CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
-CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj: ../DestructibleBlock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\DestructibleBlock.cpp.obj -c C:\University\CourseWork\bombermanQT\DestructibleBlock.cpp
-
-CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\DestructibleBlock.cpp > CMakeFiles\bombermanQT.dir\DestructibleBlock.cpp.i
-
-CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\DestructibleBlock.cpp -o CMakeFiles\bombermanQT.dir\DestructibleBlock.cpp.s
-
-CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
-CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
-CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj: ../IndestructibleBlock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\IndestructibleBlock.cpp.obj -c C:\University\CourseWork\bombermanQT\IndestructibleBlock.cpp
-
-CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\IndestructibleBlock.cpp > CMakeFiles\bombermanQT.dir\IndestructibleBlock.cpp.i
-
-CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\IndestructibleBlock.cpp -o CMakeFiles\bombermanQT.dir\IndestructibleBlock.cpp.s
-
-CMakeFiles/bombermanQT.dir/MapCell.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
-CMakeFiles/bombermanQT.dir/MapCell.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
-CMakeFiles/bombermanQT.dir/MapCell.cpp.obj: ../MapCell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/bombermanQT.dir/MapCell.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\MapCell.cpp.obj -c C:\University\CourseWork\bombermanQT\MapCell.cpp
-
-CMakeFiles/bombermanQT.dir/MapCell.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/MapCell.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\MapCell.cpp > CMakeFiles\bombermanQT.dir\MapCell.cpp.i
-
-CMakeFiles/bombermanQT.dir/MapCell.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/MapCell.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\MapCell.cpp -o CMakeFiles\bombermanQT.dir\MapCell.cpp.s
-
-CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
-CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
-CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj: ../EmptyBlock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\EmptyBlock.cpp.obj -c C:\University\CourseWork\bombermanQT\EmptyBlock.cpp
-
-CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\EmptyBlock.cpp > CMakeFiles\bombermanQT.dir\EmptyBlock.cpp.i
-
-CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\EmptyBlock.cpp -o CMakeFiles\bombermanQT.dir\EmptyBlock.cpp.s
+CMakeFiles/bombermanQT.dir/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/Enemy.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\Enemy.cpp -o CMakeFiles\bombermanQT.dir\Enemy.cpp.s
 
 CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
 CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
 CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj: ../EnemyMoveUpDown.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\EnemyMoveUpDown.cpp.obj -c C:\University\CourseWork\bombermanQT\EnemyMoveUpDown.cpp
 
 CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.i: cmake_force
@@ -261,7 +177,7 @@ CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.s: cmake_force
 CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
 CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
 CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj: ../EnemyMoveLeftRight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\EnemyMoveLeftRight.cpp.obj -c C:\University\CourseWork\bombermanQT\EnemyMoveLeftRight.cpp
 
 CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.i: cmake_force
@@ -272,10 +188,80 @@ CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\EnemyMoveLeftRight.cpp -o CMakeFiles\bombermanQT.dir\EnemyMoveLeftRight.cpp.s
 
+CMakeFiles/bombermanQT.dir/Bomb.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
+CMakeFiles/bombermanQT.dir/Bomb.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
+CMakeFiles/bombermanQT.dir/Bomb.cpp.obj: ../Bomb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/bombermanQT.dir/Bomb.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\Bomb.cpp.obj -c C:\University\CourseWork\bombermanQT\Bomb.cpp
+
+CMakeFiles/bombermanQT.dir/Bomb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/Bomb.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\Bomb.cpp > CMakeFiles\bombermanQT.dir\Bomb.cpp.i
+
+CMakeFiles/bombermanQT.dir/Bomb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/Bomb.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\Bomb.cpp -o CMakeFiles\bombermanQT.dir\Bomb.cpp.s
+
+CMakeFiles/bombermanQT.dir/MapCell.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
+CMakeFiles/bombermanQT.dir/MapCell.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
+CMakeFiles/bombermanQT.dir/MapCell.cpp.obj: ../MapCell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/bombermanQT.dir/MapCell.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\MapCell.cpp.obj -c C:\University\CourseWork\bombermanQT\MapCell.cpp
+
+CMakeFiles/bombermanQT.dir/MapCell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/MapCell.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\MapCell.cpp > CMakeFiles\bombermanQT.dir\MapCell.cpp.i
+
+CMakeFiles/bombermanQT.dir/MapCell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/MapCell.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\MapCell.cpp -o CMakeFiles\bombermanQT.dir\MapCell.cpp.s
+
+CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
+CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
+CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj: ../DestructibleBlock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\DestructibleBlock.cpp.obj -c C:\University\CourseWork\bombermanQT\DestructibleBlock.cpp
+
+CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\DestructibleBlock.cpp > CMakeFiles\bombermanQT.dir\DestructibleBlock.cpp.i
+
+CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\DestructibleBlock.cpp -o CMakeFiles\bombermanQT.dir\DestructibleBlock.cpp.s
+
+CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
+CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
+CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj: ../IndestructibleBlock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\IndestructibleBlock.cpp.obj -c C:\University\CourseWork\bombermanQT\IndestructibleBlock.cpp
+
+CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\IndestructibleBlock.cpp > CMakeFiles\bombermanQT.dir\IndestructibleBlock.cpp.i
+
+CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\IndestructibleBlock.cpp -o CMakeFiles\bombermanQT.dir\IndestructibleBlock.cpp.s
+
+CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
+CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
+CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj: ../EmptyBlock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\EmptyBlock.cpp.obj -c C:\University\CourseWork\bombermanQT\EmptyBlock.cpp
+
+CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\EmptyBlock.cpp > CMakeFiles\bombermanQT.dir\EmptyBlock.cpp.i
+
+CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\EmptyBlock.cpp -o CMakeFiles\bombermanQT.dir\EmptyBlock.cpp.s
+
 CMakeFiles/bombermanQT.dir/Health.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
 CMakeFiles/bombermanQT.dir/Health.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
 CMakeFiles/bombermanQT.dir/Health.cpp.obj: ../Health.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/bombermanQT.dir/Health.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/bombermanQT.dir/Health.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\Health.cpp.obj -c C:\University\CourseWork\bombermanQT\Health.cpp
 
 CMakeFiles/bombermanQT.dir/Health.cpp.i: cmake_force
@@ -289,7 +275,7 @@ CMakeFiles/bombermanQT.dir/Health.cpp.s: cmake_force
 CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
 CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
 CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj: bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\bombermanQT_autogen\EWIEGA46WW\qrc_resourses.cpp.obj -c C:\University\CourseWork\bombermanQT\cmake-build-debug\bombermanQT_autogen\EWIEGA46WW\qrc_resourses.cpp
 
 CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.i: cmake_force
@@ -304,18 +290,17 @@ CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.s: c
 bombermanQT_OBJECTS = \
 "CMakeFiles/bombermanQT.dir/bombermanQT_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/main.cpp.obj" \
-"CMakeFiles/bombermanQT.dir/widget.cpp.obj" \
+"CMakeFiles/bombermanQT.dir/Game.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/Player.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/Map.cpp.obj" \
-"CMakeFiles/bombermanQT.dir/Enemies.cpp.obj" \
-"CMakeFiles/bombermanQT.dir/Bomb.cpp.obj" \
-"CMakeFiles/bombermanQT.dir/Game.cpp.obj" \
-"CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj" \
-"CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj" \
-"CMakeFiles/bombermanQT.dir/MapCell.cpp.obj" \
-"CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj" \
+"CMakeFiles/bombermanQT.dir/Enemy.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj" \
+"CMakeFiles/bombermanQT.dir/Bomb.cpp.obj" \
+"CMakeFiles/bombermanQT.dir/MapCell.cpp.obj" \
+"CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj" \
+"CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj" \
+"CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/Health.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj"
 
@@ -324,18 +309,17 @@ bombermanQT_EXTERNAL_OBJECTS =
 
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/bombermanQT_autogen/mocs_compilation.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/main.cpp.obj
-bombermanQT.exe: CMakeFiles/bombermanQT.dir/widget.cpp.obj
+bombermanQT.exe: CMakeFiles/bombermanQT.dir/Game.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/Player.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/Map.cpp.obj
-bombermanQT.exe: CMakeFiles/bombermanQT.dir/Enemies.cpp.obj
-bombermanQT.exe: CMakeFiles/bombermanQT.dir/Bomb.cpp.obj
-bombermanQT.exe: CMakeFiles/bombermanQT.dir/Game.cpp.obj
-bombermanQT.exe: CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj
-bombermanQT.exe: CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj
-bombermanQT.exe: CMakeFiles/bombermanQT.dir/MapCell.cpp.obj
-bombermanQT.exe: CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj
+bombermanQT.exe: CMakeFiles/bombermanQT.dir/Enemy.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj
+bombermanQT.exe: CMakeFiles/bombermanQT.dir/Bomb.cpp.obj
+bombermanQT.exe: CMakeFiles/bombermanQT.dir/MapCell.cpp.obj
+bombermanQT.exe: CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj
+bombermanQT.exe: CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj
+bombermanQT.exe: CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/Health.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/build.make
@@ -345,7 +329,7 @@ bombermanQT.exe: C:/Qt/6.2.0/mingw81_64/lib/libQt6Core.a
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/linklibs.rsp
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/objects1.rsp
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable bombermanQT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable bombermanQT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\bombermanQT.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

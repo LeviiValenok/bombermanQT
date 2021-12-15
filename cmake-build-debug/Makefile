@@ -213,29 +213,29 @@ EmptyBlock.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.s
 .PHONY : EmptyBlock.cpp.s
 
-Enemies.obj: Enemies.cpp.obj
-.PHONY : Enemies.obj
+Enemy.obj: Enemy.cpp.obj
+.PHONY : Enemy.obj
 
 # target to build an object file
-Enemies.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Enemies.cpp.obj
-.PHONY : Enemies.cpp.obj
+Enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Enemy.cpp.obj
+.PHONY : Enemy.cpp.obj
 
-Enemies.i: Enemies.cpp.i
-.PHONY : Enemies.i
+Enemy.i: Enemy.cpp.i
+.PHONY : Enemy.i
 
 # target to preprocess a source file
-Enemies.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Enemies.cpp.i
-.PHONY : Enemies.cpp.i
+Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Enemy.cpp.i
+.PHONY : Enemy.cpp.i
 
-Enemies.s: Enemies.cpp.s
-.PHONY : Enemies.s
+Enemy.s: Enemy.cpp.s
+.PHONY : Enemy.s
 
 # target to generate assembly for a file
-Enemies.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Enemies.cpp.s
-.PHONY : Enemies.cpp.s
+Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Enemy.cpp.s
+.PHONY : Enemy.cpp.s
 
 EnemyMoveLeftRight.obj: EnemyMoveLeftRight.cpp.obj
 .PHONY : EnemyMoveLeftRight.obj
@@ -501,30 +501,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-widget.obj: widget.cpp.obj
-.PHONY : widget.obj
-
-# target to build an object file
-widget.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/widget.cpp.obj
-.PHONY : widget.cpp.obj
-
-widget.i: widget.cpp.i
-.PHONY : widget.i
-
-# target to preprocess a source file
-widget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/widget.cpp.i
-.PHONY : widget.cpp.i
-
-widget.s: widget.cpp.s
-.PHONY : widget.s
-
-# target to generate assembly for a file
-widget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/widget.cpp.s
-.PHONY : widget.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -544,9 +520,9 @@ help:
 	@echo ... EmptyBlock.obj
 	@echo ... EmptyBlock.i
 	@echo ... EmptyBlock.s
-	@echo ... Enemies.obj
-	@echo ... Enemies.i
-	@echo ... Enemies.s
+	@echo ... Enemy.obj
+	@echo ... Enemy.i
+	@echo ... Enemy.s
 	@echo ... EnemyMoveLeftRight.obj
 	@echo ... EnemyMoveLeftRight.i
 	@echo ... EnemyMoveLeftRight.s
@@ -580,9 +556,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... widget.obj
-	@echo ... widget.i
-	@echo ... widget.s
 .PHONY : help
 
 

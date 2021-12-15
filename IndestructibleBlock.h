@@ -1,25 +1,19 @@
 #ifndef INDESTRUCTIBLE_H
 #define INDESTRUCTIBLE_H
 
-
 #include <QGraphicsPixmapItem>
 #include <QObject>
 #include <QGraphicsItem>
 #include <QGraphicsRectItem>
-#include "MapCell.h"
 
+#include "MapCell.h"
 
 //public QGraphicsPixmapItem
 class IndestructibleBlock: public MapCell
 {
-    Q_OBJECT
+Q_OBJECT
 public:
-//    IndestructibleBlock(QGraphicsItem* parent = 0);
-
-    IndestructibleBlock(int x, int y, CellType type, QGraphicsItem* parent = nullptr) : MapCell(type)
-    {
-
-    }
+    IndestructibleBlock(int x, int y, CellType type, QGraphicsItem* parent = nullptr) : MapCell(type) {}
 };
 
 #endif

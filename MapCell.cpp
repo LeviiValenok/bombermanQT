@@ -1,10 +1,6 @@
-//
-// Created by gaydi on 05.12.2021.
-//
+#include <QGraphicsScene>
 
 #include "MapCell.h"
-
-#include <QGraphicsScene>
 
 MapCell::MapCell(CellType cellType)
 {
@@ -16,7 +12,4 @@ void MapCell::removeItem(MapCell *item)
     scene()->removeItem(this);
 }
 
-MapCell::MapCell()
-{
-
-}
+MapCell::MapCell(){}

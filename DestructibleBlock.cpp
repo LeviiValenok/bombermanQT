@@ -2,7 +2,7 @@
 
 #include <QGraphicsScene>
 #include <QGraphicsPixmapItem>
-
+#include <QPainter>
 #include <QPainterPath>
 
 //DestructibleBlock::DestructibleBlock(qreal x, qreal y, QGraphicsItem *parent): QGraphicsPixmapItem(parent)

@@ -1,4 +1,3 @@
-//#pragma once
 #ifndef MAP_H
 #define MAP_H
 
@@ -10,24 +9,22 @@
 #include "DestructibleBlock.h"
 #include "EmptyBlock.h"
 
+class Game;
 //add value exit
 
 class Map : public QObject, public QGraphicsPixmapItem
 {
-    Q_OBJECT
+Q_OBJECT
 
 
-    public:
-        MapCell *table[6][8];
-        Map(QGraphicsScene* scene, QGraphicsItem* parent = 0);
-        void outputField(QGraphicsScene* scene);
-        Map();
-
-//        void setCellValue(int i, int j, int value);
-//        void outputCTable();
-
-
+public:
+    Game* game;
+    MapCell *table[6][8];
+    Map(QGraphicsScene* scene, QGraphicsItem* parent = 0);
+    void outputField(QGraphicsScene* scene);
+    void setGame(Game* game);
+    Map();
+    void setEmptyCell(int i, int j);
 };
-
 
 #endif

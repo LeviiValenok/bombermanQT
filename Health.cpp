@@ -1,9 +1,6 @@
-//
-// Created by gaydi on 09.12.2021.
-//
+#include <QFont>
 
 #include "Health.h"
-#include <QFont>
 
 Health::Health(QGraphicsItem *parent): QGraphicsTextItem(parent){
     // initialize the score to 0

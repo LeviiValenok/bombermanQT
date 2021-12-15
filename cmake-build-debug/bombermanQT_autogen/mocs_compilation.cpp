@@ -6,4 +6,3 @@
 #include "EWIEGA46WW/moc_IndestructibleBlock.cpp"
 #include "EWIEGA46WW/moc_Map.cpp"
 #include "EWIEGA46WW/moc_Player.cpp"
-#include "EWIEGA46WW/moc_widget.cpp"

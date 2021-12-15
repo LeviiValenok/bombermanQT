@@ -1,12 +1,14 @@
-#include "Game.h"
-
-
 #include <QTimer>
 #include <QGraphicsTextItem>
 #include <QFont>
 #include <QBrush>
 #include <QImage>
 #include <QGraphicsRectItem>
+
+#include "Game.h"
+
+class EnemyMoveLeftRight;
+class EnemyMoveUpDown;
 
 Game::Game(QWidget* parent)
 {
@@ -25,18 +27,32 @@ Game::Game(QWidget* parent)
     health->setPos(health->x(),health->y()+25);
     scene->addItem(health);
 
-    player = new Player(*map, *health);
+    player = new Player();
     player->setPos(0, 0);
     player->setRect(0, 0, 75, 75);
     player->setFlag(QGraphicsItem::ItemIsFocusable);
     player->setFocus();
 
-    enemyUpDown = new EnemyMoveUpDown(UP_DOWN, 410, 110, *map, *player);
-    enemyLeftRight = new EnemyMoveLeftRight(LEFT_TO_RIGHT, 100, 400, *map, *player);
+    enemyUpDown = new EnemyMoveUpDown(UP_DOWN, 410, 110);
+    enemyLeftRight = new EnemyMoveLeftRight(LEFT_TO_RIGHT, 100, 400);
 
     scene->addItem(enemyUpDown);
     scene->addItem(enemyLeftRight);
     scene->addItem(player);
 
     show();
+}
+
+void Game::setUpGameLinks()
+{
+    map->setGame(this);
+    player->setGame(this);
+    enemyUpDown->setGame(this);
+    enemyLeftRight->setGame(this);
+}
+
+void Game::setBomb(qreal xBomb, qreal yBomb)
+{
+    Bomb* bomb = new Bomb(xBomb, yBomb, this);
+    this->scene->addItem(bomb);
 }

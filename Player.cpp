@@ -1,8 +1,5 @@
-#include "Player.h"
-#include "EnemyMoveUpDown.h"
-#include "Bomb.h"
-
-
+#include <stdio.h>
+#include <stdbool.h>
 #include <QList>
 #include <QGraphicsScene>
 #include <QKeyEvent>
@@ -10,12 +7,19 @@
 #include <QGraphicsRectItem>
 #include <QtDebug>
 
-Player::Player(Map &map, Health& health,  QGraphicsItem *parent): QGraphicsRectItem(parent), map(&map), health(&health)
+#include "Player.h"
+#include "constants.h"
+
+Player::Player(QGraphicsItem *parent): QGraphicsRectItem(parent)
 {
     xPlayer = 0;
     yPlayer = 0;
 }
 
+void Player :: setGame(Game* game)
+{
+    this->game = game;
+}
 
 void Player :: keyPressEvent(QKeyEvent *event)
 {
@@ -25,30 +29,23 @@ void Player :: keyPressEvent(QKeyEvent *event)
     int playerSize = 75;
     int step = 10;
 
-
-
-   // QGraphicsScene *scene;
-
+    Map* map = this->game->map;
 
     if (event->key() == Qt::Key_A)
     {
-
         if(xPlayer - step >= 0 &&
-       (map->table[(yPlayer + playerSize) / blockSize][(xPlayer - step) / blockSize]->type) == EMPTY
-        && (map->table[(yPlayer) / blockSize][(xPlayer - step) / blockSize]->type) == EMPTY)
-         {
-
+           (map->table[(yPlayer + playerSize) / blockSize][(xPlayer - step) / blockSize]->type) == EMPTY
+           && (map->table[(yPlayer) / blockSize][(xPlayer - step) / blockSize]->type) == EMPTY)
+        {
             setPos(xPlayer-step,yPlayer);
-         }
-
-
+        }
     }
     else if (event->key() == Qt::Key_D)
-        {
+    {
 
         if(xPlayer + playerSize + step <= 800 &&
-         (map->table[(yPlayer + playerSize) / blockSize][(xPlayer + step + playerSize) / blockSize]->type) == EMPTY
-            &&(map->table[(yPlayer) / blockSize][(xPlayer + step + playerSize) / blockSize])->type == EMPTY)
+           (map->table[(yPlayer + playerSize) / blockSize][(xPlayer + step + playerSize) / blockSize]->type) == EMPTY
+           &&(map->table[(yPlayer) / blockSize][(xPlayer + step + playerSize) / blockSize])->type == EMPTY)
         {
 
             setPos(xPlayer+step,yPlayer);
@@ -57,8 +54,8 @@ void Player :: keyPressEvent(QKeyEvent *event)
     else if (event->key() == Qt::Key_W)
     {
         if(yPlayer - step >= 0 &&
-        (map->table[(yPlayer - step) / blockSize][(xPlayer + playerSize) / blockSize]->type) == EMPTY
-                &&(map->table[(yPlayer - step) / blockSize][(xPlayer) / blockSize]->type) == EMPTY)
+           (map->table[(yPlayer - step) / blockSize][(xPlayer + playerSize) / blockSize]->type) == EMPTY
+           &&(map->table[(yPlayer - step) / blockSize][(xPlayer) / blockSize]->type) == EMPTY)
         {
             setPos(xPlayer,yPlayer-step);
         }
@@ -66,20 +63,16 @@ void Player :: keyPressEvent(QKeyEvent *event)
     else if (event->key() == Qt::Key_S)
     {
 
-     if(yPlayer + playerSize + step <= 600 &&
-     (map->table[(yPlayer + step + playerSize) / blockSize][(xPlayer + playerSize) / blockSize]->type == EMPTY)
-        && (map->table[(yPlayer + step + playerSize) / blockSize][(xPlayer) / blockSize])->type == EMPTY)
+        if(yPlayer + playerSize + step <= 600 &&
+           (map->table[(yPlayer + step + playerSize) / blockSize][(xPlayer + playerSize) / blockSize]->type == EMPTY)
+           && (map->table[(yPlayer + step + playerSize) / blockSize][(xPlayer) / blockSize])->type == EMPTY)
         {
-
             setPos(xPlayer,yPlayer+step);
         }
-    }else if(event->key() == Qt::Key_Space)
+    }
+    else if(event->key() == Qt::Key_Space)
     {
-        Bomb* bomb = new Bomb(xPlayer, yPlayer, *map);
-        scene()->addItem(bomb);
-//        bomb->destroyItem(xBomb, yBomb, bomb, *map);
-
-
+        this->game->setBomb(xPlayer, yPlayer);
     }
 
 }

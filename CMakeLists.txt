@@ -16,34 +16,32 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
 set(PROJECT_SOURCES
         main.cpp
-        widget.cpp
-        widget.h
+        constants.h
+        Game.cpp
+        Game.h
         Player.cpp
         Player.h
         Map.cpp
         Map.h
-        Enemies.cpp
-        Enemies.h
-        Bomb.cpp
-        Bomb.h
-        resourses.qrc
-        Game.cpp
-        Game.h
-        DestructibleBlock.cpp
-        DestructibleBlock.h
-        IndestructibleBlock.cpp
-        IndestructibleBlock.h
-#        Block.cpp
-#        Block.h
-        MapCell.cpp
-        MapCell.h
-        constants.h
-        EmptyBlock.cpp
-        EmptyBlock.h
+        Enemy.cpp
+        Enemy.h
         EnemyMoveUpDown.cpp
         EnemyMoveUpDown.h
         EnemyMoveLeftRight.cpp
         EnemyMoveLeftRight.h
+        Bomb.cpp
+        Bomb.h
+        resourses.qrc
+        MapCell.cpp
+        MapCell.h
+        DestructibleBlock.cpp
+        DestructibleBlock.h
+        IndestructibleBlock.cpp
+        IndestructibleBlock.h
+        #        Block.cpp
+        #        Block.h
+        EmptyBlock.cpp
+        EmptyBlock.h
         Health.cpp Health.h)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

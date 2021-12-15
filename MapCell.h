@@ -1,7 +1,3 @@
-//
-// Created by gaydi on 05.12.2021.
-//
-
 #ifndef BOMBERMANQT_MAPCELL_H
 #define BOMBERMANQT_MAPCELL_H
 

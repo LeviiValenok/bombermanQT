@@ -11,7 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/University/CourseWork/bombermanQT/Bomb.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Bomb.cpp.obj"
   "C:/University/CourseWork/bombermanQT/DestructibleBlock.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj"
   "C:/University/CourseWork/bombermanQT/EmptyBlock.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj"
-  "C:/University/CourseWork/bombermanQT/Enemies.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Enemies.cpp.obj"
+  "C:/University/CourseWork/bombermanQT/Enemy.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Enemy.cpp.obj"
   "C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/EnemyMoveLeftRight.cpp.obj"
   "C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj"
   "C:/University/CourseWork/bombermanQT/Game.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Game.cpp.obj"
@@ -23,7 +23,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj"
   "C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/mocs_compilation.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/bombermanQT_autogen/mocs_compilation.cpp.obj"
   "C:/University/CourseWork/bombermanQT/main.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/main.cpp.obj"
-  "C:/University/CourseWork/bombermanQT/widget.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/widget.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

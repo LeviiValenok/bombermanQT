@@ -260,9 +260,9 @@
 			null
 		],
 		[
-			"C:/University/CourseWork/bombermanQT/Enemies.h",
+			"C:/University/CourseWork/bombermanQT/Enemy.h",
 			"MU",
-			"EWIEGA46WW/moc_Enemies.cpp",
+			"EWIEGA46WW/moc_Enemy.cpp",
 			null
 		],
 		[
@@ -317,12 +317,6 @@
 			"C:/University/CourseWork/bombermanQT/constants.h",
 			"MU",
 			"EWIEGA46WW/moc_constants.cpp",
-			null
-		],
-		[
-			"C:/University/CourseWork/bombermanQT/widget.h",
-			"MU",
-			"EWIEGA46WW/moc_widget.cpp",
 			null
 		]
 	],
@@ -397,7 +391,7 @@
 			null
 		],
 		[ "C:/University/CourseWork/bombermanQT/EmptyBlock.cpp", "MU", null ],
-		[ "C:/University/CourseWork/bombermanQT/Enemies.cpp", "MU", null ],
+		[ "C:/University/CourseWork/bombermanQT/Enemy.cpp", "MU", null ],
 		[
 			"C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.cpp",
 			"MU",
@@ -418,8 +412,7 @@
 		[ "C:/University/CourseWork/bombermanQT/Map.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/MapCell.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/Player.cpp", "MU", null ],
-		[ "C:/University/CourseWork/bombermanQT/main.cpp", "MU", null ],
-		[ "C:/University/CourseWork/bombermanQT/widget.cpp", "MU", null ]
+		[ "C:/University/CourseWork/bombermanQT/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

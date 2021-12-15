@@ -1,13 +1,7 @@
-//
-// Created by gaydi on 05.12.2021.
-//
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
 
-#ifndef BOMBERMANQT_CONSTANTS_H
-#define BOMBERMANQT_CONSTANTS_H
-
-#endif
 #include <stdbool.h>
-
 
 enum CellType
 {
@@ -18,12 +12,13 @@ enum CellType
 };
 
 const int initializationsTable[6][8] =
-    {
-        { 0, 0, 0, 0, 1, 1, 0, 1},
-        { 0, 2, 0, 2, 0, 2, 0, 1},
-        { 0, 0, 1, 0, 0, 0, 0, 0},
-        { 0, 2, 0, 2, 0, 2, 0, 2},
-        { 0, 0, 0, 0, 1, 1, 0, 2},
-        { 0, 1, 1, 0, 0, 0, 0, 2},
-    };
+        {
+                { 0, 0, 0, 0, 1, 1, 0, 1},
+                { 0, 2, 0, 2, 0, 2, 0, 1},
+                { 0, 0, 1, 0, 0, 0, 0, 0},
+                { 0, 2, 0, 2, 0, 2, 0, 2},
+                { 0, 0, 0, 0, 1, 1, 0, 2},
+                { 0, 1, 1, 0, 0, 0, 0, 2},
+        };
 
+#endif

@@ -5954,15 +5954,18 @@ static const unsigned char qt_resource_struct[] = {
 #   define QT_RCC_PREPEND_NAMESPACE(name) name
 #   define QT_RCC_MANGLE_NAMESPACE(name) name
 #endif
+
 #ifdef QT_NAMESPACE
 namespace QT_NAMESPACE {
 #endif
+
 bool qRegisterResourceData(int, const unsigned char *, const unsigned char *, const unsigned char *);
 bool qUnregisterResourceData(int, const unsigned char *, const unsigned char *, const unsigned char *);
 
 #ifdef QT_NAMESPACE
 }
 #endif
+
 int QT_RCC_MANGLE_NAMESPACE(qInitResources_resourses)();
 int QT_RCC_MANGLE_NAMESPACE(qInitResources_resourses)()
 {

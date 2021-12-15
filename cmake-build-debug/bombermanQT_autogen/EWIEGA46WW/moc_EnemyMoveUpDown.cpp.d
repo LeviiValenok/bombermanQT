@@ -287,16 +287,22 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/QPaintEvent \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/QTransform \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qbitmap.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qbrush.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qcolor.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qcursor.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qevent.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qeventpoint.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qfont.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontinfo.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontmetrics.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qimage.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qinputdevice.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpaintdevice.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainter.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainterpath.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qpalette.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpen.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qpixmap.h \
@@ -306,6 +312,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgb.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgba64.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qscreen.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtGui/qtextoption.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.2.0/mingw81_64/include/QtGui/qtransform.h \
@@ -320,13 +327,25 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsRectItem \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsScene \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsTextItem \
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QGraphicsView \
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/QWidget \
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qframe.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsitem.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsscene.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qgraphicsview.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qscrollarea.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+  C:/Qt/6.2.0/mingw81_64/include/QtWidgets/qwidget.h \
+  C:/University/CourseWork/bombermanQT/Bomb.h \
   C:/University/CourseWork/bombermanQT/DestructibleBlock.h \
   C:/University/CourseWork/bombermanQT/EmptyBlock.h \
-  C:/University/CourseWork/bombermanQT/Enemies.h \
+  C:/University/CourseWork/bombermanQT/Enemy.h \
+  C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.h \
+  C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.h \
+  C:/University/CourseWork/bombermanQT/Game.h \
   C:/University/CourseWork/bombermanQT/Health.h \
   C:/University/CourseWork/bombermanQT/Map.h \
   C:/University/CourseWork/bombermanQT/MapCell.h \

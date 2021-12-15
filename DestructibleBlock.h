@@ -9,24 +9,16 @@
 
 #include "MapCell.h"
 
-
+//#include "Block.h"
+//, public QGraphicsPixmapItem
 
 class DestructibleBlock:  public MapCell
 {
-    Q_OBJECT
+Q_OBJECT
 public:
-
-//    DestructibleBlock(QGraphicsItem * parent=0);
-    DestructibleBlock(int x, int y, CellType type, QGraphicsItem* parent = nullptr) : MapCell(type)
-    {
-
-    }
-
-
+    DestructibleBlock(int x, int y, CellType type, QGraphicsItem* parent = nullptr) : MapCell(type) {}
     void removeBlock(DestructibleBlock& block);
-//      DestructibleBlock(QGraphicsItem * parent=0);
     friend class Bomb;
-
 };
 
 #endif

@@ -75,7 +75,7 @@ void EnemyMoveLeftRight::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
 }
 
 const QMetaObject EnemyMoveLeftRight::staticMetaObject = { {
-    QMetaObject::SuperData::link<Enemies::staticMetaObject>(),
+    QMetaObject::SuperData::link<Enemy::staticMetaObject>(),
     qt_meta_stringdata_EnemyMoveLeftRight.offsetsAndSize,
     qt_meta_data_EnemyMoveLeftRight,
     qt_static_metacall,
@@ -100,12 +100,12 @@ void *EnemyMoveLeftRight::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_EnemyMoveLeftRight.stringdata0))
         return static_cast<void*>(this);
-    return Enemies::qt_metacast(_clname);
+    return Enemy::qt_metacast(_clname);
 }
 
 int EnemyMoveLeftRight::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = Enemies::qt_metacall(_c, _id, _a);
+    _id = Enemy::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

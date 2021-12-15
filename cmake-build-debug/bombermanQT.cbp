@@ -146,10 +146,10 @@
 		<Unit filename="C:/University/CourseWork/bombermanQT/EmptyBlock.h">
 			<Option target="bombermanQT"/>
 		</Unit>
-		<Unit filename="C:/University/CourseWork/bombermanQT/Enemies.cpp">
+		<Unit filename="C:/University/CourseWork/bombermanQT/Enemy.cpp">
 			<Option target="bombermanQT"/>
 		</Unit>
-		<Unit filename="C:/University/CourseWork/bombermanQT/Enemies.h">
+		<Unit filename="C:/University/CourseWork/bombermanQT/Enemy.h">
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.cpp">
@@ -216,12 +216,6 @@
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/resourses.qrc">
-			<Option target="bombermanQT"/>
-		</Unit>
-		<Unit filename="C:/University/CourseWork/bombermanQT/widget.cpp">
-			<Option target="bombermanQT"/>
-		</Unit>
-		<Unit filename="C:/University/CourseWork/bombermanQT/widget.h">
 			<Option target="bombermanQT"/>
 		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/CMakeLists.txt">

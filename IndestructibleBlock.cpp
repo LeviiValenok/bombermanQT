@@ -1,6 +1,7 @@
-#include "IndestructibleBlock.h"
 #include <QGraphicsScene>
 #include <QGraphicsPixmapItem>
+
+#include "IndestructibleBlock.h"
 
 //IndestructibleBlock::IndestructibleBlock(qreal x, qreal y, QGraphicsItem *parent): QGraphicsPixmapItem(parent)
 //{
