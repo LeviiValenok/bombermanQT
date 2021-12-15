@@ -242,7 +242,6 @@ CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj: \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/qvarlengtharray.h \
  C:/Qt/6.2.0/mingw81_64/include/QtCore/qversiontagging.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/QPaintEvent \
- C:/Qt/6.2.0/mingw81_64/include/QtGui/QPainter \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/QPainterPath \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/QTransform \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qbrush.h \
@@ -250,13 +249,10 @@ CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj: \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qevent.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qeventpoint.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qfont.h \
- C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontinfo.h \
- C:/Qt/6.2.0/mingw81_64/include/QtGui/qfontmetrics.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qimage.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qinputdevice.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qkeysequence.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qpaintdevice.h \
- C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainter.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainterpath.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qpen.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qpixelformat.h \
@@ -267,7 +263,6 @@ CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj: \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgb.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qrgba64.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qscreen.h \
- C:/Qt/6.2.0/mingw81_64/include/QtGui/qtextoption.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qtgui-config.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qtguiglobal.h \
  C:/Qt/6.2.0/mingw81_64/include/QtGui/qtransform.h \

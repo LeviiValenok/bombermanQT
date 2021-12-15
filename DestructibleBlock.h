@@ -9,9 +9,6 @@
 
 #include "MapCell.h"
 
-//#include "Block.h"
-//, public QGraphicsPixmapItem
-
 
 
 class DestructibleBlock:  public MapCell

@@ -27,13 +27,7 @@ public:
         yBlock = y;
 //        blockType = type;
     }
-//    Block& operator=(const Block* right)
-//    {
-//        xBlock = right->xBlock;
-//        yBlock = right->yBlock;
-//        blockType = right->blockType;
-//        return *this;
-//    }
+
 
     void removeBlock(Block& removableItem);
 

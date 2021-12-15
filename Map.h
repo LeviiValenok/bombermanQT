@@ -10,9 +10,6 @@
 #include "DestructibleBlock.h"
 #include "EmptyBlock.h"
 
-
-
-
 //add value exit
 
 class Map : public QObject, public QGraphicsPixmapItem

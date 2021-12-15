@@ -5,13 +5,13 @@
 #include <QGraphicsPixmapItem>
 #include <QObject>
 #include <QGraphicsItem>
-#include <QList>
 
 #include "Map.h"
 #include "Health.h"
 
 
 #include <stdbool.h>
+
 
 class Player : public QObject, public QGraphicsRectItem
 {
@@ -29,8 +29,8 @@ public:
     Map* map;
     Health* health;
     void keyPressEvent(QKeyEvent * event);
-    void spawnEnemy();
-    void setBomb(int xBomb, int yBomb, int bombSize);
+/*    void spawnEnemy();
+    void setBomb(int xBomb, int yBomb, int bombSize);*/
     friend class Map;
 
 

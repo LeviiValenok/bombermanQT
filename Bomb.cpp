@@ -48,7 +48,7 @@ Bomb::Bomb(qreal x, qreal y, Map& map): QObject(), QGraphicsRectItem(), map(&map
 //    connect(timer,SIGNAL(timeout()),this,SLOT(destroyItem(qreal x, qreal y, Bomb * bomb, Map & map)));
     connect(timer,SIGNAL(timeout()),this,SLOT(destroyItem()));
     timer->start(3000);
-    qDebug() << "Timer was set";
+
 
 }
 
@@ -101,9 +101,9 @@ void Bomb :: destroyItem() {
 
 }
 
-void Bomb:: setPosition(int x, int y)
-{
-    setPos(x, y);
-}
-
+//void Bomb:: setPosition(int x, int y)
+//{
+//    setPos(x, y);
+//}
+//
 

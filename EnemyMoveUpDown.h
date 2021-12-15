@@ -7,6 +7,8 @@
 #include "Enemies.h"
 #include <QTimer>
 
+
+
 class EnemyMoveUpDown: public Enemies
 {
 Q_OBJECT

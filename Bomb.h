@@ -17,7 +17,6 @@ class Bomb: public QObject, public QGraphicsRectItem
 {
     Q_OBJECT
 private:
-    int **bombCoordinate;
     int xBomb;
     int yBomb;
     Map* map;
@@ -28,7 +27,7 @@ public:
     friend class Player;
     Bomb(qreal x, qreal y, Map& map);
     ~Bomb();
-    void setPosition(int x, int y);
+//    void setPosition(int x, int y);
 
 
 //    void bombDetonation();
