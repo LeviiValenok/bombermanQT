@@ -69,6 +69,9 @@ bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: ../resourses.qrc
 bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: CMakeFiles/bombermanQT_autogen.dir/AutoRcc_resourses_EWIEGA46WW_Info.json
 bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: ../bombermanPic/player.png
 bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: ../bombermanPic/broken.png
+bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: ../bombermanPic/enemy.png
+bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: ../bombermanPic/bomb.png
+bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: ../bombermanPic/mainwindowBACK.png
 bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: ../bombermanPic/groundWithLines.png
 bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: ../bombermanPic/ground.png
 bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp: ../bombermanPic/doesntBroke.png
@@ -272,10 +275,24 @@ CMakeFiles/bombermanQT.dir/Health.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/Health.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\Health.cpp -o CMakeFiles\bombermanQT.dir\Health.cpp.s
 
+CMakeFiles/bombermanQT.dir/mainwindow.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
+CMakeFiles/bombermanQT.dir/mainwindow.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
+CMakeFiles/bombermanQT.dir/mainwindow.cpp.obj: ../mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/bombermanQT.dir/mainwindow.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\mainwindow.cpp.obj -c C:\University\CourseWork\bombermanQT\mainwindow.cpp
+
+CMakeFiles/bombermanQT.dir/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bombermanQT.dir/mainwindow.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bombermanQT\mainwindow.cpp > CMakeFiles\bombermanQT.dir\mainwindow.cpp.i
+
+CMakeFiles/bombermanQT.dir/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bombermanQT.dir/mainwindow.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bombermanQT\mainwindow.cpp -o CMakeFiles\bombermanQT.dir\mainwindow.cpp.s
+
 CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj: CMakeFiles/bombermanQT.dir/flags.make
 CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj: CMakeFiles/bombermanQT.dir/includes_CXX.rsp
 CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj: bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bombermanQT.dir\bombermanQT_autogen\EWIEGA46WW\qrc_resourses.cpp.obj -c C:\University\CourseWork\bombermanQT\cmake-build-debug\bombermanQT_autogen\EWIEGA46WW\qrc_resourses.cpp
 
 CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.i: cmake_force
@@ -302,6 +319,7 @@ bombermanQT_OBJECTS = \
 "CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/Health.cpp.obj" \
+"CMakeFiles/bombermanQT.dir/mainwindow.cpp.obj" \
 "CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj"
 
 # External object files for target bombermanQT
@@ -321,6 +339,7 @@ bombermanQT.exe: CMakeFiles/bombermanQT.dir/DestructibleBlock.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/EmptyBlock.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/Health.cpp.obj
+bombermanQT.exe: CMakeFiles/bombermanQT.dir/mainwindow.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/build.make
 bombermanQT.exe: C:/Qt/6.2.0/mingw81_64/lib/libQt6Widgets.a
@@ -329,7 +348,7 @@ bombermanQT.exe: C:/Qt/6.2.0/mingw81_64/lib/libQt6Core.a
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/linklibs.rsp
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/objects1.rsp
 bombermanQT.exe: CMakeFiles/bombermanQT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable bombermanQT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\University\CourseWork\bombermanQT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable bombermanQT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\bombermanQT.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

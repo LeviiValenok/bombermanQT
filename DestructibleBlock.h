@@ -10,13 +10,16 @@
 #include "MapCell.h"
 
 //#include "Block.h"
-//, public QGraphicsPixmapItem
+//
 
-class DestructibleBlock:  public MapCell
+class DestructibleBlock:  virtual public MapCell
 {
-Q_OBJECT
+
 public:
-    DestructibleBlock(int x, int y, CellType type, QGraphicsItem* parent = nullptr) : MapCell(type) {}
+    DestructibleBlock(int x, int y, CellType type, QGraphicsItem* parent = nullptr) : MapCell(type)
+    {
+        setPixmap(QPixmap(":/pictures/bombermanPic/broken.png"));
+    }
     void removeBlock(DestructibleBlock& block);
     friend class Bomb;
 };

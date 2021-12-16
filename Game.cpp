@@ -24,12 +24,12 @@ Game::Game(QWidget* parent)
     map = new Map(scene);
 
     health = new Health();
-    health->setPos(health->x(),health->y()+25);
+    health->setPos(health->x()+600,health->y()+25);
     scene->addItem(health);
 
     player = new Player();
     player->setPos(0, 0);
-    player->setRect(0, 0, 75, 75);
+//    player->setRect(0, 0, 75, 75);
     player->setFlag(QGraphicsItem::ItemIsFocusable);
     player->setFocus();
 
@@ -54,5 +54,6 @@ void Game::setUpGameLinks()
 void Game::setBomb(qreal xBomb, qreal yBomb)
 {
     Bomb* bomb = new Bomb(xBomb, yBomb, this);
+
     this->scene->addItem(bomb);
 }

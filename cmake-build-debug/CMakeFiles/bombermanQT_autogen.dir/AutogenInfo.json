@@ -318,6 +318,12 @@
 			"MU",
 			"EWIEGA46WW/moc_constants.cpp",
 			null
+		],
+		[
+			"C:/University/CourseWork/bombermanQT/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -412,7 +418,8 @@
 		[ "C:/University/CourseWork/bombermanQT/Map.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/MapCell.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/Player.cpp", "MU", null ],
-		[ "C:/University/CourseWork/bombermanQT/main.cpp", "MU", null ]
+		[ "C:/University/CourseWork/bombermanQT/main.cpp", "MU", null ],
+		[ "C:/University/CourseWork/bombermanQT/mainwindow.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

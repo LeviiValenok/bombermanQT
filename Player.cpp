@@ -10,10 +10,11 @@
 #include "Player.h"
 #include "constants.h"
 
-Player::Player(QGraphicsItem *parent): QGraphicsRectItem(parent)
+Player::Player(QGraphicsItem *parent): QGraphicsPixmapItem(parent)
 {
     xPlayer = 0;
     yPlayer = 0;
+    setPixmap(QPixmap(":/pictures/bombermanPic/player.png"));
 }
 
 void Player :: setGame(Game* game)

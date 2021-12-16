@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
 #include <QObject>
 #include <QTimer>
 #include <QGraphicsItem>
@@ -10,7 +11,7 @@
 
 #include "Map.h"
 
-class Bomb: public QObject, public QGraphicsRectItem
+class Bomb: public QObject, public QGraphicsPixmapItem
 {
 Q_OBJECT
 private:
@@ -21,7 +22,7 @@ public slots:
     void destroyItem();
 public:
     Game* game;
-    Bomb(qreal x, qreal y, Game* game);
+    Bomb(qreal x, qreal y, Game* game, QGraphicsItem* parent = 0);
 };
 
 #endif

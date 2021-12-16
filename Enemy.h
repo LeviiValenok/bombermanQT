@@ -4,6 +4,7 @@
 #include <iostream>
 #include <QObject>
 #include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
 
 enum DirectionOfTravel
 {
@@ -13,7 +14,7 @@ enum DirectionOfTravel
 
 class Game;
 
-class Enemy: public QObject, public QGraphicsRectItem
+class Enemy: public QObject, public QGraphicsPixmapItem
 {
 public:
     Game* game;

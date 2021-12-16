@@ -215,6 +215,15 @@
 		<Unit filename="C:/University/CourseWork/bombermanQT/main.cpp">
 			<Option target="bombermanQT"/>
 		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/mainwindow.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/mainwindow.h">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/mainwindow.ui">
+			<Option target="bombermanQT"/>
+		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/resourses.qrc">
 			<Option target="bombermanQT"/>
 		</Unit>

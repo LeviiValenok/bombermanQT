@@ -5,5 +5,8 @@
         <file>bombermanPic/broken.png</file>
         <file>bombermanPic/doesntBroke.png</file>
         <file>bombermanPic/groundWithLines.png</file>
+        <file>bombermanPic/enemy.png</file>
+        <file>bombermanPic/bomb.png</file>
+        <file>bombermanPic/mainwindowBACK.png</file>
     </qresource>
 </RCC>

@@ -42,7 +42,12 @@ set(PROJECT_SOURCES
         #        Block.h
         EmptyBlock.cpp
         EmptyBlock.h
-        Health.cpp Health.h)
+        Health.cpp
+        Health.h
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
+        )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(bombermanQT

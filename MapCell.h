@@ -8,7 +8,7 @@
 
 #include "constants.h"
 
-class MapCell: public QObject, public QGraphicsRectItem
+class MapCell: public QObject, public QGraphicsPixmapItem
 {
 public:
     CellType type;

@@ -30,7 +30,7 @@ void Map::outputField(QGraphicsScene *scene)
             if(initializationsTable[i][j] == DESTRUCTIBLE_BLOCK)
             {
                 DestructibleBlock* destroyedBlock = new DestructibleBlock(j, i, DESTRUCTIBLE_BLOCK);
-                destroyedBlock->setRect(j*100, i*100, 100, 100);
+                destroyedBlock->setPos(j*100, i*100);
                 scene->addItem(destroyedBlock);
                 table[i][j] = destroyedBlock;
             } else
@@ -41,7 +41,7 @@ void Map::outputField(QGraphicsScene *scene)
             if(initializationsTable[i][j] == INDESTRUCTIBLE_BLOCK)
             {
                 IndestructibleBlock* indestrictableBlock = new IndestructibleBlock(j, i, INDESTRUCTIBLE_BLOCK);
-                indestrictableBlock->setRect(j*100, i*100, 100, 100);
+                indestrictableBlock->setPos(j*100, i*100);
                 scene->addItem(indestrictableBlock);
                 table[i][j] = indestrictableBlock;
             }

@@ -14,14 +14,16 @@ public slots:
 public:
     EnemyMoveUpDown(DirectionOfTravel direction, int xEnemy, int yEnemy, QGraphicsItem* parent = nullptr) : Enemy(direction, xEnemy, yEnemy, parent)
     {
+        setPixmap(QPixmap(":/pictures/bombermanPic/enemy.png"));
         setPos(xEnemy, yEnemy);
-        setRect(0, 0, sizeEnemy, sizeEnemy);
+//        setRect(0, 0, sizeEnemy, sizeEnemy);
         QTimer * timer = new QTimer(this);
         connect(timer,SIGNAL(timeout()),this,SLOT(moveEnemyUpDown()));
         // start the timer
         timer->start(100);
     }
     void spawn(int x, int y);
+    void removeEnemyMoveUpDown();
 };
 
 

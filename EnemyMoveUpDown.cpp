@@ -7,7 +7,7 @@ bool isSelectorUpDown = true;
 void EnemyMoveUpDown ::spawn(int x, int y)
 {
 //    setPos(x, y);
-    setRect(x, y, sizeEnemy, sizeEnemy);
+//    setRect(x, y, sizeEnemy, sizeEnemy);
 }
 
 void EnemyMoveUpDown :: moveEnemyUpDown()
@@ -93,4 +93,11 @@ void EnemyMoveUpDown :: moveEnemyUpDown()
         }
     }
 
+}
+
+
+void EnemyMoveUpDown ::removeEnemyMoveUpDown()
+{
+    scene()->removeItem(this);
+//    delete this;
 }

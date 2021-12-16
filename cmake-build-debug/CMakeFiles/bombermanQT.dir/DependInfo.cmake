@@ -23,6 +23,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj"
   "C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/mocs_compilation.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/bombermanQT_autogen/mocs_compilation.cpp.obj"
   "C:/University/CourseWork/bombermanQT/main.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/main.cpp.obj"
+  "C:/University/CourseWork/bombermanQT/mainwindow.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/mainwindow.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

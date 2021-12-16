@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/bombermanQT.dir/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp.obj"
   "CMakeFiles/bombermanQT.dir/bombermanQT_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/bombermanQT.dir/main.cpp.obj"
+  "CMakeFiles/bombermanQT.dir/mainwindow.cpp.obj"
   "bombermanQT.exe"
   "bombermanQT.exe.manifest"
   "bombermanQT.pdb"

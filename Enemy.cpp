@@ -1,7 +1,7 @@
 #include "Enemy.h"
 
 
-Enemy::Enemy(DirectionOfTravel setDirection, int x, int y, QGraphicsItem *parent) : QGraphicsRectItem(parent)
+Enemy::Enemy(DirectionOfTravel setDirection, int x, int y, QGraphicsItem *parent)
 {
     direction =  setDirection;
     xEnemy = x;

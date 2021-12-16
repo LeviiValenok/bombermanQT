@@ -82,3 +82,9 @@ void EnemyMoveLeftRight :: moveEnemyLeftRight() {
         }
     }
 }
+
+void EnemyMoveLeftRight ::removeEnemyLeftRight()
+{
+    scene()->removeItem(this);
+//    delete this;
+}
