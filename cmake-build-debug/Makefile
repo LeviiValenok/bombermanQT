@@ -285,6 +285,30 @@ EnemyMoveUpDown.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.s
 .PHONY : EnemyMoveUpDown.cpp.s
 
+ExitBlock.obj: ExitBlock.cpp.obj
+.PHONY : ExitBlock.obj
+
+# target to build an object file
+ExitBlock.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/ExitBlock.cpp.obj
+.PHONY : ExitBlock.cpp.obj
+
+ExitBlock.i: ExitBlock.cpp.i
+.PHONY : ExitBlock.i
+
+# target to preprocess a source file
+ExitBlock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/ExitBlock.cpp.i
+.PHONY : ExitBlock.cpp.i
+
+ExitBlock.s: ExitBlock.cpp.s
+.PHONY : ExitBlock.s
+
+# target to generate assembly for a file
+ExitBlock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/ExitBlock.cpp.s
+.PHONY : ExitBlock.cpp.s
+
 Game.obj: Game.cpp.obj
 .PHONY : Game.obj
 
@@ -553,6 +577,9 @@ help:
 	@echo ... EnemyMoveUpDown.obj
 	@echo ... EnemyMoveUpDown.i
 	@echo ... EnemyMoveUpDown.s
+	@echo ... ExitBlock.obj
+	@echo ... ExitBlock.i
+	@echo ... ExitBlock.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s

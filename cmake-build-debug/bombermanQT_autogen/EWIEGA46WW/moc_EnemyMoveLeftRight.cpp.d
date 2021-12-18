@@ -345,6 +345,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/University/CourseWork/bombermanQT/Enemy.h \
   C:/University/CourseWork/bombermanQT/EnemyMoveLeftRight.h \
   C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.h \
+  C:/University/CourseWork/bombermanQT/ExitBlock.h \
   C:/University/CourseWork/bombermanQT/Game.h \
   C:/University/CourseWork/bombermanQT/Health.h \
   C:/University/CourseWork/bombermanQT/Map.h \

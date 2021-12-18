@@ -1122,14 +1122,6 @@ C:/Qt/6.2.0/mingw81_64/include/QtGui/QPaintEvent
 qevent.h
 C:/Qt/6.2.0/mingw81_64/include/QtGui/qevent.h
 
-C:/Qt/6.2.0/mingw81_64/include/QtGui/QPainter
-qpainter.h
-C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainter.h
-
-C:/Qt/6.2.0/mingw81_64/include/QtGui/QPainterPath
-qpainterpath.h
-C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainterpath.h
-
 C:/Qt/6.2.0/mingw81_64/include/QtGui/QTransform
 qtransform.h
 C:/Qt/6.2.0/mingw81_64/include/QtGui/qtransform.h
@@ -1846,18 +1838,6 @@ QGraphicsScene
 Map.h
 C:/University/CourseWork/bombermanQT/Map.h
 
-C:/University/CourseWork/bombermanQT/DestructibleBlock.cpp
-DestructibleBlock.h
-C:/University/CourseWork/bombermanQT/DestructibleBlock.h
-QGraphicsScene
--
-QGraphicsPixmapItem
--
-QPainter
--
-QPainterPath
--
-
 C:/University/CourseWork/bombermanQT/DestructibleBlock.h
 QGraphicsPixmapItem
 -
@@ -1872,17 +1852,9 @@ QPaintEvent
 MapCell.h
 C:/University/CourseWork/bombermanQT/MapCell.h
 
-C:/University/CourseWork/bombermanQT/EmptyBlock.cpp
-EmptyBlock.h
-C:/University/CourseWork/bombermanQT/EmptyBlock.h
-
 C:/University/CourseWork/bombermanQT/EmptyBlock.h
 MapCell.h
 C:/University/CourseWork/bombermanQT/MapCell.h
-
-C:/University/CourseWork/bombermanQT/Enemy.cpp
-Enemy.h
-C:/University/CourseWork/bombermanQT/Enemy.h
 
 C:/University/CourseWork/bombermanQT/Enemy.h
 iostream
@@ -1917,6 +1889,14 @@ Enemy.h
 C:/University/CourseWork/bombermanQT/Enemy.h
 Game.h
 C:/University/CourseWork/bombermanQT/Game.h
+
+C:/University/CourseWork/bombermanQT/ExitBlock.cpp
+ExitBlock.h
+C:/University/CourseWork/bombermanQT/ExitBlock.h
+
+C:/University/CourseWork/bombermanQT/ExitBlock.h
+MapCell.h
+C:/University/CourseWork/bombermanQT/MapCell.h
 
 C:/University/CourseWork/bombermanQT/Game.cpp
 QTimer
@@ -1964,14 +1944,6 @@ C:/University/CourseWork/bombermanQT/Health.h
 QGraphicsTextItem
 -
 
-C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp
-QGraphicsScene
--
-QGraphicsPixmapItem
--
-IndestructibleBlock.h
-C:/University/CourseWork/bombermanQT/IndestructibleBlock.h
-
 C:/University/CourseWork/bombermanQT/IndestructibleBlock.h
 QGraphicsPixmapItem
 -
@@ -2009,12 +1981,8 @@ DestructibleBlock.h
 C:/University/CourseWork/bombermanQT/DestructibleBlock.h
 EmptyBlock.h
 C:/University/CourseWork/bombermanQT/EmptyBlock.h
-
-C:/University/CourseWork/bombermanQT/MapCell.cpp
-QGraphicsScene
--
-MapCell.h
-C:/University/CourseWork/bombermanQT/MapCell.h
+ExitBlock.h
+C:/University/CourseWork/bombermanQT/ExitBlock.h
 
 C:/University/CourseWork/bombermanQT/MapCell.h
 QGraphicsPixmapItem
@@ -2131,8 +2099,6 @@ QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
-
-C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp
 
 C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/mocs_compilation.cpp
 EWIEGA46WW/moc_Bomb.cpp

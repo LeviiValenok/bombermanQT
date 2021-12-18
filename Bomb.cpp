@@ -27,7 +27,7 @@ Bomb::Bomb(qreal x, qreal y, Game* game, QGraphicsItem* parent): QObject(), QGra
     this->game = game;
     int bombSize = 75;
     setPixmap(QPixmap(":/pictures/bombermanPic/bomb.png"));
-    setPos(x*100, y*100);
+    setPos(x, y);
     xBomb = x;
     yBomb = y;
     timer = new QTimer(this);

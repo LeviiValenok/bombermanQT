@@ -33,17 +33,21 @@ void Map::outputField(QGraphicsScene *scene)
                 destroyedBlock->setPos(j*100, i*100);
                 scene->addItem(destroyedBlock);
                 table[i][j] = destroyedBlock;
-            } else
-            {
-                EmptyBlock* emptyBlock = new EmptyBlock(EMPTY);
-                table[i][j] = emptyBlock;
-            }
-            if(initializationsTable[i][j] == INDESTRUCTIBLE_BLOCK)
+            } else if(initializationsTable[i][j] == INDESTRUCTIBLE_BLOCK)
             {
                 IndestructibleBlock* indestrictableBlock = new IndestructibleBlock(j, i, INDESTRUCTIBLE_BLOCK);
                 indestrictableBlock->setPos(j*100, i*100);
                 scene->addItem(indestrictableBlock);
                 table[i][j] = indestrictableBlock;
+            }  else if(initializationsTable[i][j] == EXIT)
+            {
+                ExitBlock* exit = new ExitBlock(EXIT);
+                table[i][j] = exit;
+            }
+            else
+            {
+                EmptyBlock* emptyBlock = new EmptyBlock(EMPTY);
+                table[i][j] = emptyBlock;
             }
         }
     }

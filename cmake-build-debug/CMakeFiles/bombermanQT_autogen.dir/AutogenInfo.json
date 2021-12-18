@@ -278,6 +278,12 @@
 			null
 		],
 		[
+			"C:/University/CourseWork/bombermanQT/ExitBlock.h",
+			"MU",
+			"EWIEGA46WW/moc_ExitBlock.cpp",
+			null
+		],
+		[
 			"C:/University/CourseWork/bombermanQT/Game.h",
 			"MU",
 			"EWIEGA46WW/moc_Game.cpp",
@@ -408,6 +414,7 @@
 			"MU",
 			null
 		],
+		[ "C:/University/CourseWork/bombermanQT/ExitBlock.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/Game.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/Health.cpp", "MU", null ],
 		[

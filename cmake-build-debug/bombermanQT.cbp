@@ -164,6 +164,12 @@
 		<Unit filename="C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.h">
 			<Option target="bombermanQT"/>
 		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/ExitBlock.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/ExitBlock.h">
+			<Option target="bombermanQT"/>
+		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/Game.cpp">
 			<Option target="bombermanQT"/>
 		</Unit>

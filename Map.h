@@ -8,6 +8,7 @@
 
 #include "DestructibleBlock.h"
 #include "EmptyBlock.h"
+#include "ExitBlock.h"
 
 class Game;
 //add value exit

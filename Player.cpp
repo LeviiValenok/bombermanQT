@@ -45,12 +45,21 @@ void Player :: keyPressEvent(QKeyEvent *event)
     {
 
         if(xPlayer + playerSize + step <= 800 &&
-           (map->table[(yPlayer + playerSize) / blockSize][(xPlayer + step + playerSize) / blockSize]->type) == EMPTY
-           &&(map->table[(yPlayer) / blockSize][(xPlayer + step + playerSize) / blockSize])->type == EMPTY)
+           (((map->table[(yPlayer + playerSize) / blockSize][(xPlayer + step + playerSize) / blockSize]->type) == EMPTY
+           &&(map->table[(yPlayer) / blockSize][(xPlayer + step + playerSize) / blockSize])->type == EMPTY)  ||
+             ((map->table[(yPlayer + playerSize) / blockSize][(xPlayer + step+ playerSize) / blockSize]->type) == EXIT
+            && (map->table[(yPlayer) / blockSize][(xPlayer+ step + playerSize) / blockSize])->type == EXIT)))
         {
 
             setPos(xPlayer+step,yPlayer);
+            if (((map->table[(yPlayer + playerSize) / blockSize][(xPlayer+ playerSize) / blockSize]->type) == EXIT
+                 && (map->table[(yPlayer) / blockSize][(xPlayer + playerSize) / blockSize])->type == EXIT))
+            {
+
+            }
         }
+
+
     }
     else if (event->key() == Qt::Key_W)
     {
@@ -77,11 +86,5 @@ void Player :: keyPressEvent(QKeyEvent *event)
     }
 
 }
-
-//void Player :: spawnEnemy()
-//{
-//    EnemyMoveUpDown* enemyUpDown = new EnemyMoveUpDown(UP_DOWN);
-//    scene()->addItem(enemyUpDown);
-//}
 
 //сделать по границам клетки пермещение и коллизию так же
