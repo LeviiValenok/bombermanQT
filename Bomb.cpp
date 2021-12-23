@@ -4,23 +4,13 @@
 
 #include <QTimer>
 #include <QGraphicsScene>
+#include <QPointer>
 #include <QList>
 #include <QGraphicsItem>
 #include <stdbool.h>
 
 bool isEnemyLeftRightExist = true;
 bool isEnemyUpDownExist = true;
-//void Bomb::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
-//{
-//    QPolygon polygon;
-//    polygon << QPoint(300,200) << QPoint(225,300) << QPoint(300,300)
-//            << QPoint(300, 400) << QPoint(375, 400) << QPoint(375, 300) << QPoint(450, 300)
-//            <<  QPoint(450, 200) << QPoint(375, 200) << QPoint(375, 100) << QPoint(300, 100);
-//    painter->setBrush(Qt::black);
-//    painter->drawPolygon(polygon);
-//    Q_UNUSED(option);
-//    Q_UNUSED(widget);
-//}
 
 Bomb::Bomb(qreal x, qreal y, Game* game, QGraphicsItem* parent): QObject(), QGraphicsPixmapItem(parent)
 {
@@ -40,14 +30,16 @@ Bomb::Bomb(qreal x, qreal y, Game* game, QGraphicsItem* parent): QObject(), QGra
 void Bomb :: destroyItem() {
     int blockSize = 100;
     int bombSize = 75;
+    int enemySize = 75;
+    QPointer<Map> map = this->game->map;
+    QPointer<Player> player = this->game->player;
+//    QSharedPointer<EnemyMoveLeftRight> enemyLeftRight = this->game->enemyLeftRight;
+    QPointer<EnemyMoveLeftRight> enemyLeftRight = this->game->enemyLeftRight;
+//    QSharedPointer<EnemyMoveUpDown> enemyMoveUpDown = this->game->enemyUpDown;
+    QPointer<EnemyMoveUpDown> enemyMoveUpDown = this->game->enemyUpDown;
 
-    Map* map = this->game->map;
-    Player* player = this->game->player;
-    EnemyMoveLeftRight* enemyLeftRight = this->game->enemyLeftRight;
-    EnemyMoveUpDown* enemyMoveUpDown = this->game->enemyUpDown;
     int playerSize = player->playerSize;
-    int enemySize = enemyLeftRight->sizeEnemy;
-    QGraphicsScene* scene = game->scene;
+    QPointer<QGraphicsScene> scene = game->scene;
 //for destroy block
     if ((yBomb - bombSize) > 0 && ((map->table[(yBomb - bombSize) / blockSize][(xBomb + bombSize) / blockSize])->type == DESTRUCTIBLE_BLOCK ||
                                    ((map->table[(yBomb - bombSize) / blockSize][(xBomb) / blockSize])->type == DESTRUCTIBLE_BLOCK)))
@@ -105,19 +97,32 @@ void Bomb :: destroyItem() {
         player->xPlayer = 0;
         this->game->health->decrease();
     }
+
+/*    ((map->table[yBomb/blockSize][(xBomb+bombSize)/blockSize])->type == DESTRUCTIBLE_BLOCK ||
+     (map->table[yBomb/blockSize][(xBomb + 2*bombSize)/blockSize])->type == DESTRUCTIBLE_BLOCK))*/
+
+    if ((xBomb + bombSize) < 700 &&
+    (((map->table[yBomb/blockSize][(xBomb+bombSize)/blockSize]) == map->table[(player->yPlayer)/blockSize][(player->xPlayer)/blockSize] ||
+    (map->table[yBomb/blockSize][(xBomb + 2*bombSize)/blockSize]) == map->table[(player->yPlayer)/blockSize][(player->xPlayer + playerSize)/blockSize])))
+    {
+        player->setPos(0, 0);
+        player->yPlayer = 0;
+        player->xPlayer = 0;
+        this->game->health->decrease();
+    }
 //for destroy enemy left right
 
-    if (isEnemyLeftRightExist) {
+    if (!enemyLeftRight.isNull()) {
         if ((yBomb - bombSize) > 0 &&
             (map->table[(yBomb - bombSize) / blockSize][(xBomb + bombSize) / blockSize] ==
              map->table[(enemyLeftRight->yEnemy + enemySize) / blockSize][(enemyLeftRight->xEnemy) / blockSize]) ||
             (map->table[(yBomb - bombSize) / blockSize][(xBomb) / blockSize] ==
              map->table[(enemyLeftRight->yEnemy + enemySize) / blockSize][(enemyLeftRight->xEnemy + enemySize) /
                                                                           blockSize])) {
-//        enemyLeftRight->removeEnemyLeftRight();
+//            enemyLeftRight->removeEnemyLeftRight();
             scene->removeItem(enemyLeftRight);
-            isEnemyLeftRightExist = false;
             delete enemyLeftRight;
+            isEnemyLeftRightExist = false;
             scene->removeItem(this);
             delete timer;
             return;
@@ -131,9 +136,8 @@ void Bomb :: destroyItem() {
                map->table[(enemyLeftRight->yEnemy) / blockSize][(enemyLeftRight->xEnemy + enemySize) / blockSize])))) {
 //        enemyLeftRight->removeEnemyLeftRight();
             scene->removeItem(enemyLeftRight);
+            delete enemyLeftRight;;
             isEnemyLeftRightExist = false;
-            delete enemyLeftRight;
-
             scene->removeItem(this);
             delete timer;
             return;
@@ -147,8 +151,8 @@ void Bomb :: destroyItem() {
                                                                            blockSize]))) {
 //        enemyLeftRight->removeEnemyLeftRight();
             scene->removeItem(enemyLeftRight);
-            isEnemyLeftRightExist = false;
             delete enemyLeftRight;
+            isEnemyLeftRightExist = false;
             scene->removeItem(this);
             delete timer;
             return;
@@ -161,15 +165,15 @@ void Bomb :: destroyItem() {
              map->table[(enemyLeftRight->yEnemy + enemySize) / blockSize][enemyLeftRight->xEnemy / blockSize])) {
 //        enemyLeftRight->removeEnemyLeftRight();
             scene->removeItem(enemyLeftRight);
-            isEnemyLeftRightExist = false;
             delete enemyLeftRight;
+            isEnemyLeftRightExist = false;
             scene->removeItem(this);
             delete timer;
             return;
         }
     }
 //for destroy enemy move up down
-    if (isEnemyUpDownExist) {
+    if (!enemyMoveUpDown.isNull()) {
         if ((yBomb - bombSize) > 0 &&
             (map->table[(yBomb - bombSize) / blockSize][(xBomb + bombSize) / blockSize] ==
              map->table[(enemyMoveUpDown->yEnemy + enemySize) / blockSize][(enemyMoveUpDown->xEnemy) / blockSize]) ||

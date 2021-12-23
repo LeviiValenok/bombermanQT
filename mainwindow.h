@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include<QGraphicsPixmapItem>
+
 namespace Ui {
 class MainWindow;
 }
@@ -18,8 +19,13 @@ public:
 private slots:
     void on_playButton_clicked();
 
+   // void on_pushButton_clicked();
+
+
+
 private:
     Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H

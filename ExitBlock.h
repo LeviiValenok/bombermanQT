@@ -5,9 +5,9 @@
 class ExitBlock : public MapCell
 {
 public:
-    ExitBlock(CellType type ):MapCell(type)
+    ExitBlock(CellType type, QGraphicsItem* parent = nullptr ):MapCell(type)
     {
-
+        setPixmap(QPixmap(":/pictures/bombermanPic/door.png"));
     }
 };
 

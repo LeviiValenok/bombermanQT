@@ -5,6 +5,7 @@
 #include <QObject>
 #include <QGraphicsItem>
 #include <QList>
+#include <QPointer>
 #include <stdbool.h>
 
 #include "Game.h"
@@ -16,7 +17,7 @@ public:
     int xPlayer;
     int yPlayer;
     int playerSize = 75;
-    Game* game;
+    QPointer<Game> game;
 
     Player(QGraphicsItem * parent=0);
     void keyPressEvent(QKeyEvent * event);

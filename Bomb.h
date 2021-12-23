@@ -8,6 +8,7 @@
 #include <QTimer>
 #include <QGraphicsItem>
 #include <QGraphicsScene>
+#include <QPointer>
 
 #include "Map.h"
 
@@ -21,7 +22,7 @@ private:
 public slots:
     void destroyItem();
 public:
-    Game* game;
+    QPointer<Game> game;
     Bomb(qreal x, qreal y, Game* game, QGraphicsItem* parent = 0);
 };
 

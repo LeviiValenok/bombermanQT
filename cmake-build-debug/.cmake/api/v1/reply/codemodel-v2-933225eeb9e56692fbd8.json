@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "bombermanQT",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bombermanQT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bombermanQT-Debug-f9659e87404139fffa3b.json",
+					"name" : "bombermanQT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bombermanQT_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bombermanQT_autogen-Debug-79cf1385c55c5299b498.json",
+					"name" : "bombermanQT_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/University/CourseWork/bombermanQT/cmake-build-debug",
+		"source" : "C:/University/CourseWork/bombermanQT"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

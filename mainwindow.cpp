@@ -4,6 +4,7 @@
 
 #include "Game.h"
 Game* bomberman;
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -13,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Window, bkgnd);
+
     this->setPalette(palette);
 }
 
@@ -24,9 +26,19 @@ MainWindow::~MainWindow()
 void MainWindow::on_playButton_clicked()
 {
     this->close();
-    bomberman = new Game();
+    bomberman = new Game(1);
     bomberman->setUpGameLinks();
-    bomberman->show();
+    //bomberman->show();
 
 }
+
+
+//void MainWindow::on_pushButton_clicked()
+//{
+//    bombermanLevel2 = new Game(2);
+//    bombermanLevel2->show();
+//}
+
+
+
 

@@ -8,5 +8,11 @@
         <file>bombermanPic/enemy.png</file>
         <file>bombermanPic/bomb.png</file>
         <file>bombermanPic/mainwindowBACK.png</file>
+        <file>bombermanPic/groundLevel2.png</file>
+        <file>bombermanPic/game-over-screen.png</file>
+        <file>bombermanPic/door.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>bombermanPic/door.png</file>
     </qresource>
 </RCC>

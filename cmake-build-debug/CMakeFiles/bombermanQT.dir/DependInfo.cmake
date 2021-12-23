@@ -16,6 +16,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj"
   "C:/University/CourseWork/bombermanQT/ExitBlock.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/ExitBlock.cpp.obj"
   "C:/University/CourseWork/bombermanQT/Game.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Game.cpp.obj"
+  "C:/University/CourseWork/bombermanQT/GameIsOver.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/GameIsOver.cpp.obj"
+  "C:/University/CourseWork/bombermanQT/GameIsWin.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/GameIsWin.cpp.obj"
   "C:/University/CourseWork/bombermanQT/Health.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Health.cpp.obj"
   "C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj"
   "C:/University/CourseWork/bombermanQT/Map.cpp" "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT.dir/Map.cpp.obj"

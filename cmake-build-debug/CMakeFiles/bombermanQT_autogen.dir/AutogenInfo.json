@@ -290,6 +290,18 @@
 			null
 		],
 		[
+			"C:/University/CourseWork/bombermanQT/GameIsOver.h",
+			"MU",
+			"EWIEGA46WW/moc_GameIsOver.cpp",
+			null
+		],
+		[
+			"C:/University/CourseWork/bombermanQT/GameIsWin.h",
+			"MU",
+			"EWIEGA46WW/moc_GameIsWin.cpp",
+			null
+		],
+		[
 			"C:/University/CourseWork/bombermanQT/Health.h",
 			"MU",
 			"EWIEGA46WW/moc_Health.cpp",
@@ -416,6 +428,8 @@
 		],
 		[ "C:/University/CourseWork/bombermanQT/ExitBlock.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/Game.cpp", "MU", null ],
+		[ "C:/University/CourseWork/bombermanQT/GameIsOver.cpp", "MU", null ],
+		[ "C:/University/CourseWork/bombermanQT/GameIsWin.cpp", "MU", null ],
 		[ "C:/University/CourseWork/bombermanQT/Health.cpp", "MU", null ],
 		[
 			"C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp",

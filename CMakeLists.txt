@@ -49,6 +49,10 @@ set(PROJECT_SOURCES
         mainwindow.ui
         ExitBlock.cpp
         ExitBlock.h
+        GameIsWin.cpp
+        GameIsWin.h
+        GameIsOver.cpp
+        GameIsOver.h
         )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

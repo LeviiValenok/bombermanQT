@@ -176,6 +176,18 @@
 		<Unit filename="C:/University/CourseWork/bombermanQT/Game.h">
 			<Option target="bombermanQT"/>
 		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/GameIsOver.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/GameIsOver.h">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/GameIsWin.cpp">
+			<Option target="bombermanQT"/>
+		</Unit>
+		<Unit filename="C:/University/CourseWork/bombermanQT/GameIsWin.h">
+			<Option target="bombermanQT"/>
+		</Unit>
 		<Unit filename="C:/University/CourseWork/bombermanQT/Health.cpp">
 			<Option target="bombermanQT"/>
 		</Unit>

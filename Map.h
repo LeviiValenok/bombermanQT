@@ -21,7 +21,8 @@ Q_OBJECT
 public:
     Game* game;
     MapCell *table[6][8];
-    Map(QGraphicsScene* scene, QGraphicsItem* parent = 0);
+    int LEVEL;
+    Map(int level, QGraphicsScene* scene, QGraphicsItem* parent = 0);
     void outputField(QGraphicsScene* scene);
     void setGame(Game* game);
     Map();

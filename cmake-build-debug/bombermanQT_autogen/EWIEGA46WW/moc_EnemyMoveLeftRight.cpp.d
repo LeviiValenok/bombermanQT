@@ -194,6 +194,7 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QList \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QObject \
+  C:/Qt/6.2.0/mingw81_64/include/QtCore/QPointer \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QRect \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QSize \
   C:/Qt/6.2.0/mingw81_64/include/QtCore/QSizeF \
@@ -347,6 +348,8 @@ C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEG
   C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.h \
   C:/University/CourseWork/bombermanQT/ExitBlock.h \
   C:/University/CourseWork/bombermanQT/Game.h \
+  C:/University/CourseWork/bombermanQT/GameIsOver.h \
+  C:/University/CourseWork/bombermanQT/GameIsWin.h \
   C:/University/CourseWork/bombermanQT/Health.h \
   C:/University/CourseWork/bombermanQT/Map.h \
   C:/University/CourseWork/bombermanQT/MapCell.h \

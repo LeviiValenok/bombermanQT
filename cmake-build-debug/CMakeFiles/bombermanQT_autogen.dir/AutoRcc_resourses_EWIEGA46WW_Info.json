@@ -7,13 +7,17 @@
 	"INCLUDE_DIR" : "C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/include",
 	"INPUTS" : 
 	[
+		"C:/University/CourseWork/bombermanQT/bombermanPic/door.png",
 		"C:/University/CourseWork/bombermanQT/bombermanPic/player.png",
-		"C:/University/CourseWork/bombermanQT/bombermanPic/broken.png",
 		"C:/University/CourseWork/bombermanQT/bombermanPic/enemy.png",
-		"C:/University/CourseWork/bombermanQT/bombermanPic/bomb.png",
+		"C:/University/CourseWork/bombermanQT/bombermanPic/groundLevel2.png",
 		"C:/University/CourseWork/bombermanQT/bombermanPic/mainwindowBACK.png",
+		"C:/University/CourseWork/bombermanQT/bombermanPic/door.png",
 		"C:/University/CourseWork/bombermanQT/bombermanPic/groundWithLines.png",
 		"C:/University/CourseWork/bombermanQT/bombermanPic/ground.png",
+		"C:/University/CourseWork/bombermanQT/bombermanPic/broken.png",
+		"C:/University/CourseWork/bombermanQT/bombermanPic/bomb.png",
+		"C:/University/CourseWork/bombermanQT/bombermanPic/game-over-screen.png",
 		"C:/University/CourseWork/bombermanQT/bombermanPic/doesntBroke.png"
 	],
 	"LOCK_FILE" : "C:/University/CourseWork/bombermanQT/cmake-build-debug/CMakeFiles/bombermanQT_autogen.dir/AutoRcc_resourses_EWIEGA46WW_Lock.lock",

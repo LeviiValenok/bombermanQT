@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../GameIsWin.h
+QGraphicsTextItem
+-
+
 C:/Qt/6.2.0/mingw81_64/include/QtCore/QList
 qlist.h
 C:/Qt/6.2.0/mingw81_64/include/QtCore/qlist.h
@@ -14,9 +18,17 @@ C:/Qt/6.2.0/mingw81_64/include/QtCore/QObject
 qobject.h
 C:/Qt/6.2.0/mingw81_64/include/QtCore/qobject.h
 
+C:/Qt/6.2.0/mingw81_64/include/QtCore/QPointer
+qpointer.h
+C:/Qt/6.2.0/mingw81_64/include/QtCore/qpointer.h
+
 C:/Qt/6.2.0/mingw81_64/include/QtCore/QRect
 qrect.h
 C:/Qt/6.2.0/mingw81_64/include/QtCore/qrect.h
+
+C:/Qt/6.2.0/mingw81_64/include/QtCore/QSharedPointer
+qsharedpointer.h
+C:/Qt/6.2.0/mingw81_64/include/QtCore/qsharedpointer.h
 
 C:/Qt/6.2.0/mingw81_64/include/QtCore/QSize
 qsize.h
@@ -1106,10 +1118,6 @@ C:/Qt/6.2.0/mingw81_64/include/QtGui/QBrush
 qbrush.h
 C:/Qt/6.2.0/mingw81_64/include/QtGui/qbrush.h
 
-C:/Qt/6.2.0/mingw81_64/include/QtGui/QFont
-qfont.h
-C:/Qt/6.2.0/mingw81_64/include/QtGui/qfont.h
-
 C:/Qt/6.2.0/mingw81_64/include/QtGui/QImage
 qimage.h
 C:/Qt/6.2.0/mingw81_64/include/QtGui/qimage.h
@@ -1121,6 +1129,14 @@ C:/Qt/6.2.0/mingw81_64/include/QtGui/qevent.h
 C:/Qt/6.2.0/mingw81_64/include/QtGui/QPaintEvent
 qevent.h
 C:/Qt/6.2.0/mingw81_64/include/QtGui/qevent.h
+
+C:/Qt/6.2.0/mingw81_64/include/QtGui/QPainter
+qpainter.h
+C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainter.h
+
+C:/Qt/6.2.0/mingw81_64/include/QtGui/QPainterPath
+qpainterpath.h
+C:/Qt/6.2.0/mingw81_64/include/QtGui/qpainterpath.h
 
 C:/Qt/6.2.0/mingw81_64/include/QtGui/QTransform
 qtransform.h
@@ -1813,6 +1829,8 @@ QTimer
 -
 QGraphicsScene
 -
+QPointer
+-
 QList
 -
 QGraphicsItem
@@ -1835,8 +1853,22 @@ QGraphicsItem
 -
 QGraphicsScene
 -
+QPointer
+-
 Map.h
 C:/University/CourseWork/bombermanQT/Map.h
+
+C:/University/CourseWork/bombermanQT/DestructibleBlock.cpp
+DestructibleBlock.h
+C:/University/CourseWork/bombermanQT/DestructibleBlock.h
+QGraphicsScene
+-
+QGraphicsPixmapItem
+-
+QPainter
+-
+QPainterPath
+-
 
 C:/University/CourseWork/bombermanQT/DestructibleBlock.h
 QGraphicsPixmapItem
@@ -1851,6 +1883,10 @@ QPaintEvent
 -
 MapCell.h
 C:/University/CourseWork/bombermanQT/MapCell.h
+
+C:/University/CourseWork/bombermanQT/EmptyBlock.cpp
+EmptyBlock.h
+C:/University/CourseWork/bombermanQT/EmptyBlock.h
 
 C:/University/CourseWork/bombermanQT/EmptyBlock.h
 MapCell.h
@@ -1899,11 +1935,7 @@ MapCell.h
 C:/University/CourseWork/bombermanQT/MapCell.h
 
 C:/University/CourseWork/bombermanQT/Game.cpp
-QTimer
--
 QGraphicsTextItem
--
-QFont
 -
 QBrush
 -
@@ -1911,11 +1943,17 @@ QImage
 -
 QGraphicsRectItem
 -
+iostream
+-
 Game.h
 C:/University/CourseWork/bombermanQT/Game.h
+cstdlib
+-
 
 C:/University/CourseWork/bombermanQT/Game.h
 QGraphicsView
+-
+QObject
 -
 QWidget
 -
@@ -1924,6 +1962,12 @@ QGraphicsScene
 QGraphicsPixmapItem
 -
 QGraphicsItem
+-
+QPointer
+-
+QTimer
+-
+GameIsWin.h
 -
 Map.h
 C:/University/CourseWork/bombermanQT/Map.h
@@ -1940,9 +1984,27 @@ C:/University/CourseWork/bombermanQT/Health.h
 Bomb.h
 C:/University/CourseWork/bombermanQT/Bomb.h
 
+C:/University/CourseWork/bombermanQT/GameIsOver.h
+QGraphicsTextItem
+-
+
 C:/University/CourseWork/bombermanQT/Health.h
 QGraphicsTextItem
 -
+GameIsOver.h
+C:/University/CourseWork/bombermanQT/GameIsOver.h
+QTimer
+-
+iostream
+-
+
+C:/University/CourseWork/bombermanQT/IndestructibleBlock.cpp
+QGraphicsScene
+-
+QGraphicsPixmapItem
+-
+IndestructibleBlock.h
+C:/University/CourseWork/bombermanQT/IndestructibleBlock.h
 
 C:/University/CourseWork/bombermanQT/IndestructibleBlock.h
 QGraphicsPixmapItem
@@ -1984,6 +2046,12 @@ C:/University/CourseWork/bombermanQT/EmptyBlock.h
 ExitBlock.h
 C:/University/CourseWork/bombermanQT/ExitBlock.h
 
+C:/University/CourseWork/bombermanQT/MapCell.cpp
+QGraphicsScene
+-
+MapCell.h
+C:/University/CourseWork/bombermanQT/MapCell.h
+
 C:/University/CourseWork/bombermanQT/MapCell.h
 QGraphicsPixmapItem
 -
@@ -2007,6 +2075,8 @@ QGraphicsScene
 -
 QKeyEvent
 -
+QSharedPointer
+-
 QGraphicsRectItem
 -
 QtDebug
@@ -2024,6 +2094,8 @@ QObject
 QGraphicsItem
 -
 QList
+-
+QPointer
 -
 stdbool.h
 -
@@ -2055,6 +2127,26 @@ memory
 -
 ../../../EnemyMoveUpDown.h
 C:/University/CourseWork/bombermanQT/EnemyMoveUpDown.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/moc_Game.cpp
+memory
+-
+../../../Game.h
+C:/University/CourseWork/bombermanQT/Game.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/moc_Health.cpp
+memory
+-
+../../../Health.h
+C:/University/CourseWork/bombermanQT/Health.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
@@ -2100,6 +2192,8 @@ QtCore/qbytearray.h
 QtCore/qmetatype.h
 -
 
+C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/qrc_resourses.cpp
+
 C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/mocs_compilation.cpp
 EWIEGA46WW/moc_Bomb.cpp
 C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/moc_Bomb.cpp
@@ -2107,6 +2201,10 @@ EWIEGA46WW/moc_EnemyMoveLeftRight.cpp
 C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/moc_EnemyMoveLeftRight.cpp
 EWIEGA46WW/moc_EnemyMoveUpDown.cpp
 C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/moc_EnemyMoveUpDown.cpp
+EWIEGA46WW/moc_Game.cpp
+C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/moc_Game.cpp
+EWIEGA46WW/moc_Health.cpp
+C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/moc_Health.cpp
 EWIEGA46WW/moc_IndestructibleBlock.cpp
 C:/University/CourseWork/bombermanQT/cmake-build-debug/bombermanQT_autogen/EWIEGA46WW/moc_IndestructibleBlock.cpp
 EWIEGA46WW/moc_Map.cpp

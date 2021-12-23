@@ -1,6 +1,11 @@
 #include <QFont>
 
 #include "Health.h"
+#include <QGraphicsScene>
+
+void Health::gameIsOver() {
+    std::exit(0);
+}
 
 Health::Health(QGraphicsItem *parent): QGraphicsTextItem(parent){
     // initialize the score to 0
@@ -15,6 +20,15 @@ Health::Health(QGraphicsItem *parent): QGraphicsTextItem(parent){
 void Health::decrease(){
     health--;
     setPlainText(QString("Health: ") + QString::number(health)); // Health: 2
+    if (health == 0)
+    {
+        GameIsOver* end = new GameIsOver();
+        end->setPos(end->x() + 180, end->y() + 240);
+        scene()->addItem(end);
+        QTimer* timer = new QTimer(this);
+        connect(timer,SIGNAL(timeout()),this,SLOT(gameIsOver()));
+        timer->start(3000);
+    }
 }
 
 int Health::getHealth(){

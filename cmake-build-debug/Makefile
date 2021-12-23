@@ -333,6 +333,54 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+GameIsOver.obj: GameIsOver.cpp.obj
+.PHONY : GameIsOver.obj
+
+# target to build an object file
+GameIsOver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/GameIsOver.cpp.obj
+.PHONY : GameIsOver.cpp.obj
+
+GameIsOver.i: GameIsOver.cpp.i
+.PHONY : GameIsOver.i
+
+# target to preprocess a source file
+GameIsOver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/GameIsOver.cpp.i
+.PHONY : GameIsOver.cpp.i
+
+GameIsOver.s: GameIsOver.cpp.s
+.PHONY : GameIsOver.s
+
+# target to generate assembly for a file
+GameIsOver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/GameIsOver.cpp.s
+.PHONY : GameIsOver.cpp.s
+
+GameIsWin.obj: GameIsWin.cpp.obj
+.PHONY : GameIsWin.obj
+
+# target to build an object file
+GameIsWin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/GameIsWin.cpp.obj
+.PHONY : GameIsWin.cpp.obj
+
+GameIsWin.i: GameIsWin.cpp.i
+.PHONY : GameIsWin.i
+
+# target to preprocess a source file
+GameIsWin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/GameIsWin.cpp.i
+.PHONY : GameIsWin.cpp.i
+
+GameIsWin.s: GameIsWin.cpp.s
+.PHONY : GameIsWin.s
+
+# target to generate assembly for a file
+GameIsWin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bombermanQT.dir\build.make CMakeFiles/bombermanQT.dir/GameIsWin.cpp.s
+.PHONY : GameIsWin.cpp.s
+
 Health.obj: Health.cpp.obj
 .PHONY : Health.obj
 
@@ -583,6 +631,12 @@ help:
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
+	@echo ... GameIsOver.obj
+	@echo ... GameIsOver.i
+	@echo ... GameIsOver.s
+	@echo ... GameIsWin.obj
+	@echo ... GameIsWin.i
+	@echo ... GameIsWin.s
 	@echo ... Health.obj
 	@echo ... Health.i
 	@echo ... Health.s

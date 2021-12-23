@@ -3,12 +3,14 @@
 #include <QList>
 #include <QGraphicsScene>
 #include <QKeyEvent>
+#include <QSharedPointer>
 //#include <QGraphicsPixmapItem>
 #include <QGraphicsRectItem>
 #include <QtDebug>
 
 #include "Player.h"
 #include "constants.h"
+
 
 Player::Player(QGraphicsItem *parent): QGraphicsPixmapItem(parent)
 {
@@ -55,6 +57,11 @@ void Player :: keyPressEvent(QKeyEvent *event)
             if (((map->table[(yPlayer + playerSize) / blockSize][(xPlayer+ playerSize) / blockSize]->type) == EXIT
                  && (map->table[(yPlayer) / blockSize][(xPlayer + playerSize) / blockSize])->type == EXIT))
             {
+                game->goToTheNextLevel();
+                return;
+               /* game->close();
+                SecondLevel level2;
+                level2.show();*/
 
             }
         }
@@ -68,6 +75,11 @@ void Player :: keyPressEvent(QKeyEvent *event)
            &&(map->table[(yPlayer - step) / blockSize][(xPlayer) / blockSize]->type) == EMPTY)
         {
             setPos(xPlayer,yPlayer-step);
+            /*if ((map->table[(yPlayer) / blockSize][(xPlayer + playerSize) / blockSize]->type) == EMPTY
+                &&(map->table[(yPlayer) / blockSize][(xPlayer) / blockSize]->type) == EMPTY)
+            {
+                game->goToTheNextLevel();
+            }*/
         }
     }
     else if (event->key() == Qt::Key_S)
@@ -78,6 +90,11 @@ void Player :: keyPressEvent(QKeyEvent *event)
            && (map->table[(yPlayer + step + playerSize) / blockSize][(xPlayer) / blockSize])->type == EMPTY)
         {
             setPos(xPlayer,yPlayer+step);
+           /* if((map->table[(yPlayer + playerSize) / blockSize][(xPlayer + playerSize) / blockSize]->type == EMPTY)
+               && (map->table[(yPlayer + playerSize) / blockSize][(xPlayer) / blockSize])->type == EMPTY)
+            {
+                game->goToTheNextLevel();
+            }*/
         }
     }
     else if(event->key() == Qt::Key_Space)

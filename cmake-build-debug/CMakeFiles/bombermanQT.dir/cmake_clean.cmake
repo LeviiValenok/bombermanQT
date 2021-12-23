@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/bombermanQT.dir/EnemyMoveUpDown.cpp.obj"
   "CMakeFiles/bombermanQT.dir/ExitBlock.cpp.obj"
   "CMakeFiles/bombermanQT.dir/Game.cpp.obj"
+  "CMakeFiles/bombermanQT.dir/GameIsOver.cpp.obj"
+  "CMakeFiles/bombermanQT.dir/GameIsWin.cpp.obj"
   "CMakeFiles/bombermanQT.dir/Health.cpp.obj"
   "CMakeFiles/bombermanQT.dir/IndestructibleBlock.cpp.obj"
   "CMakeFiles/bombermanQT.dir/Map.cpp.obj"
